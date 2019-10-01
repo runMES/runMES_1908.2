@@ -1,0 +1,601 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Sep 13 14:55:38 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 7.0.2 (clang-700.1.81) on 15 May 2019 10:25:14
+os: Darwin-18.7.0 Darwin Kernel Version 18.7.0: Thu Jun 20 18:42:21 PDT 2019; root:xnu-4903.270.47~4/RELEASE_X86_64
+nodename: joshuaMBP
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 12
+current working directory: /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES
+writing pidfile to /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/uwsgi-master.pid
+detected binary path: /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/bin/uwsgi
+chdir() to /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/
+your processes number limit is 1418
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+building mime-types dictionary from file /etc/apache2/mime.types...1003 entry found
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:61082 (port auto-assigned) fd 3
+Python version: 3.6.4 (v3.6.4:d48ecebad5, Dec 18 2017, 21:07:28)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+Set PythonHome to /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7f9b03009600
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+[uwsgi-cron] command "{ sleep 66 && kill -HUP $(cat /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/uwsgi-master.pid) && ls -tp /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/uwsgi-* | grep -v '/$' | tail -n +7  | xargs -d '\n' -r rm --; } &" registered as cron task
+mapped 1117336 bytes (1091 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0x7f9b03009600 pid: 71850 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 71850)
+spawned uWSGI worker 1 (pid: 71852, cores: 1)
+spawned uWSGI worker 2 (pid: 71853, cores: 1)
+spawned uWSGI worker 3 (pid: 71854, cores: 1)
+spawned uWSGI worker 4 (pid: 71855, cores: 1)
+spawned uWSGI worker 5 (pid: 71856, cores: 1)
+spawned uWSGI worker 6 (pid: 71857, cores: 1)
+spawned uWSGI worker 7 (pid: 71858, cores: 1)
+spawned uWSGI worker 8 (pid: 71859, cores: 1)
+spawned uWSGI worker 9 (pid: 71860, cores: 1)
+spawned uWSGI worker 10 (pid: 71861, cores: 1)
+spawned uWSGI http 1 (pid: 71862)
+subprocess 71851 exited with code 0
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 71862)
+worker 10 buried after 1 seconds
+worker 9 buried after 1 seconds
+worker 8 buried after 1 seconds
+worker 7 buried after 1 seconds
+worker 6 buried after 1 seconds
+worker 5 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Sep 13 15:56:01 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 7.0.2 (clang-700.1.81) on 15 May 2019 10:25:14
+os: Darwin-18.7.0 Darwin Kernel Version 18.7.0: Thu Jun 20 18:42:21 PDT 2019; root:xnu-4903.270.47~4/RELEASE_X86_64
+nodename: joshuaMBP
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 12
+current working directory: /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES
+writing pidfile to /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/uwsgi-master.pid
+detected binary path: /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/bin/uwsgi
+chdir() to /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/
+your processes number limit is 1418
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+building mime-types dictionary from file /etc/apache2/mime.types...1003 entry found
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:49161 (port auto-assigned) fd 3
+Python version: 3.6.4 (v3.6.4:d48ecebad5, Dec 18 2017, 21:07:28)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+Set PythonHome to /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7fd13e80a600
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+[uwsgi-cron] command "{ sleep 66 && kill -HUP $(cat /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/uwsgi-master.pid) && ls -tp /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/uwsgi-* | grep -v '/$' | tail -n +7  | xargs -d '\n' -r rm --; } &" registered as cron task
+mapped 1117336 bytes (1091 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x7fd13e80a600 pid: 73415 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 73415)
+spawned uWSGI worker 1 (pid: 73420, cores: 1)
+spawned uWSGI worker 2 (pid: 73421, cores: 1)
+spawned uWSGI worker 3 (pid: 73422, cores: 1)
+spawned uWSGI worker 4 (pid: 73423, cores: 1)
+spawned uWSGI worker 5 (pid: 73424, cores: 1)
+spawned uWSGI worker 6 (pid: 73425, cores: 1)
+spawned uWSGI worker 7 (pid: 73426, cores: 1)
+spawned uWSGI worker 8 (pid: 73427, cores: 1)
+spawned uWSGI worker 9 (pid: 73428, cores: 1)
+spawned uWSGI worker 10 (pid: 73429, cores: 1)
+spawned uWSGI http 1 (pid: 73430)
+subprocess 73416 exited with code 0
+[2019-09-13 16:44:50,124] Not Found: /favicon.ico
+[2019-09-13 17:00:27,369] Not Found: /static/admin/jsi18n.html/
+[2019-09-13 17:00:59,588] Not Found: /static/admin/jsi18n.html/
+[2019-09-13 17:01:41,642] Not Found: /static/admin/jsi18n.html/
+[2019-09-13 17:01:41,785] Not Found: /favicon.ico
+[2019-09-13 17:01:54,644] 'lang'
+Traceback (most recent call last):
+  File "./runMES/views.py", line 2440, in work_order
+    if request.session['lang']:
+  File "/Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 54, in __getitem__
+    return self._session[key]
+KeyError: 'lang'
+[2019-09-13 17:01:54,720] Not Found: /favicon.ico
+[2019-09-13 17:07:23,454] Not Found: /favicon.ico
+[2019-09-13 17:22:21,792] 'NoneType' object has no attribute 'owner_mail'
+Traceback (most recent call last):
+  File "./runMES/trans.py", line 1373, in tx_dc_spec
+    if lot_txt and lot_obj.owner_mail:
+AttributeError: 'NoneType' object has no attribute 'owner_mail'
+[2019-09-13 17:22:21,796] {'TNS': 'tx_dc_spec', 'ERR': AttributeError("'NoneType' object has no attribute 'owner_mail'",), 'ITEM_SPEC': 'DEMO-Base-PN', 'DC PLAN': 'DEMO-Kitting', 'VAL': 'BASE-PN-002', 'LOT': 'DEMO-01-1', 'EQ': 'DEMO-Kitting-01', 'OP': 'admin1'}
+[2019-09-13 17:22:21,797] 'OOS'
+Traceback (most recent call last):
+  File "./runMES/trans.py", line 1487, in tx_dc
+    if spec_reply['OOS']!='':
+KeyError: 'OOS'
+[2019-09-13 17:22:21,798] {'TNS': 'tx_dc', 'ERR': KeyError('OOS',), 'LOT': 'DEMO-01-1', 'DC_PLAN': 'DEMO-Kitting', 'ITEM_SET': [{'item_name': 'DEMO-Base-PN', 'category': 'DEMO-PN', 'unit': 'PN', 'data_type': 'T', 'val': 'BASE-PN-002'}, {'item_name': 'DEMO-Base-SN', 'category': 'DEMO-SN', 'unit': 'SN', 'data_type': 'T', 'val': 'BASE-SN-001'}, {'item_name': 'DEMO-Copper-PN', 'category': 'DEMO-PN', 'unit': 'PN', 'data_type': 'T', 'val': 'Copper-PN-001'}, {'item_name': 'DEMO-Copper-SN', 'category': 'DEMO-SN', 'unit': 'SN', 'data_type': 'T', 'val': 'Copper-SN-002'}], 'EQ': 'DEMO-Kitting-01'}
+[2019-09-13 17:22:21,800] 'OOS'
+Traceback (most recent call last):
+  File "./runMES/views.py", line 957, in lot_dc
+    if reply['OOS']!={}:
+KeyError: 'OOS'
+[2019-09-13 17:22:21,800] {'views': 'lot_dc', 'ERR': KeyError('OOS',)}
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 73430)
+worker 10 buried after 1 seconds
+worker 9 buried after 1 seconds
+worker 8 buried after 1 seconds
+worker 7 buried after 1 seconds
+worker 6 buried after 1 seconds
+worker 5 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Sep 13 17:46:47 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 7.0.2 (clang-700.1.81) on 15 May 2019 10:25:14
+os: Darwin-18.7.0 Darwin Kernel Version 18.7.0: Thu Jun 20 18:42:21 PDT 2019; root:xnu-4903.270.47~4/RELEASE_X86_64
+nodename: joshuaMBP
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 12
+current working directory: /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES
+writing pidfile to /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/uwsgi-master.pid
+detected binary path: /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/bin/uwsgi
+chdir() to /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/
+your processes number limit is 1418
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+building mime-types dictionary from file /etc/apache2/mime.types...1003 entry found
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:65024 (port auto-assigned) fd 3
+Python version: 3.6.4 (v3.6.4:d48ecebad5, Dec 18 2017, 21:07:28)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+Set PythonHome to /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7f90ea801e00
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+[uwsgi-cron] command "{ sleep 66 && kill -HUP $(cat /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/uwsgi-master.pid) && ls -tp /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/uwsgi-* | grep -v '/$' | tail -n +7  | xargs -d '\n' -r rm --; } &" registered as cron task
+mapped 1117336 bytes (1091 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7f90ea801e00 pid: 76363 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 76363)
+spawned uWSGI worker 1 (pid: 76365, cores: 1)
+spawned uWSGI worker 2 (pid: 76366, cores: 1)
+spawned uWSGI worker 3 (pid: 76367, cores: 1)
+spawned uWSGI worker 4 (pid: 76368, cores: 1)
+spawned uWSGI worker 5 (pid: 76369, cores: 1)
+spawned uWSGI worker 6 (pid: 76370, cores: 1)
+spawned uWSGI worker 7 (pid: 76371, cores: 1)
+spawned uWSGI worker 8 (pid: 76372, cores: 1)
+spawned uWSGI worker 9 (pid: 76373, cores: 1)
+spawned uWSGI worker 10 (pid: 76374, cores: 1)
+spawned uWSGI http 1 (pid: 76375)
+subprocess 76364 exited with code 0
+[2019-09-13 17:47:13,419] 'NoneType' object has no attribute 'owner_mail'
+Traceback (most recent call last):
+  File "./runMES/trans.py", line 1372, in tx_dc_spec
+    if dcitem_spec_obj.OOS_mail and lot_obj.owner_mail:
+AttributeError: 'NoneType' object has no attribute 'owner_mail'
+[2019-09-13 17:47:13,420] {'TNS': 'tx_dc_spec', 'ERR': AttributeError("'NoneType' object has no attribute 'owner_mail'",), 'ITEM_SPEC': 'DEMO-Base-PN', 'DC PLAN': 'DEMO-Kitting', 'VAL': 'test', 'LOT': 'DEMO-01-1', 'EQ': 'DEMO-Kitting-01', 'OP': 'admin1'}
+[2019-09-13 17:47:13,421] 'OOS'
+Traceback (most recent call last):
+  File "./runMES/trans.py", line 1487, in tx_dc
+    if spec_reply['OOS']!='':
+KeyError: 'OOS'
+[2019-09-13 17:47:13,421] {'TNS': 'tx_dc', 'ERR': KeyError('OOS',), 'LOT': 'DEMO-01-1', 'DC_PLAN': 'DEMO-Kitting', 'ITEM_SET': [{'item_name': 'DEMO-Base-PN', 'category': 'DEMO-PN', 'unit': 'PN', 'data_type': 'T', 'val': 'test'}, {'item_name': 'DEMO-Base-SN', 'category': 'DEMO-SN', 'unit': 'SN', 'data_type': 'T', 'val': 'test1'}, {'item_name': 'DEMO-Copper-PN', 'category': 'DEMO-PN', 'unit': 'PN', 'data_type': 'T', 'val': 'test2'}, {'item_name': 'DEMO-Copper-SN', 'category': 'DEMO-SN', 'unit': 'SN', 'data_type': 'T', 'val': 'test3'}], 'EQ': 'DEMO-Kitting-01'}
+[2019-09-13 17:47:13,423] 'OOS'
+Traceback (most recent call last):
+  File "./runMES/views.py", line 957, in lot_dc
+    if reply['OOS']!={}:
+KeyError: 'OOS'
+[2019-09-13 17:47:13,424] {'views': 'lot_dc', 'ERR': KeyError('OOS',)}
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 76375)
+worker 10 buried after 1 seconds
+worker 9 buried after 1 seconds
+worker 8 buried after 1 seconds
+worker 7 buried after 1 seconds
+worker 6 buried after 1 seconds
+worker 5 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Sep 13 17:49:00 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 7.0.2 (clang-700.1.81) on 15 May 2019 10:25:14
+os: Darwin-18.7.0 Darwin Kernel Version 18.7.0: Thu Jun 20 18:42:21 PDT 2019; root:xnu-4903.270.47~4/RELEASE_X86_64
+nodename: joshuaMBP
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 12
+current working directory: /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES
+writing pidfile to /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/uwsgi-master.pid
+detected binary path: /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/bin/uwsgi
+chdir() to /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/
+your processes number limit is 1418
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+building mime-types dictionary from file /etc/apache2/mime.types...1003 entry found
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:65276 (port auto-assigned) fd 3
+Python version: 3.6.4 (v3.6.4:d48ecebad5, Dec 18 2017, 21:07:28)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+Set PythonHome to /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7ff568005000
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+[uwsgi-cron] command "{ sleep 66 && kill -HUP $(cat /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/uwsgi-master.pid) && ls -tp /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/uwsgi-* | grep -v '/$' | tail -n +7  | xargs -d '\n' -r rm --; } &" registered as cron task
+mapped 1117336 bytes (1091 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7ff568005000 pid: 76434 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 76434)
+spawned uWSGI worker 1 (pid: 76436, cores: 1)
+spawned uWSGI worker 2 (pid: 76437, cores: 1)
+spawned uWSGI worker 3 (pid: 76438, cores: 1)
+spawned uWSGI worker 4 (pid: 76439, cores: 1)
+spawned uWSGI worker 5 (pid: 76440, cores: 1)
+spawned uWSGI worker 6 (pid: 76441, cores: 1)
+spawned uWSGI worker 7 (pid: 76442, cores: 1)
+spawned uWSGI worker 8 (pid: 76443, cores: 1)
+spawned uWSGI worker 9 (pid: 76444, cores: 1)
+spawned uWSGI worker 10 (pid: 76445, cores: 1)
+spawned uWSGI http 1 (pid: 76446)
+subprocess 76435 exited with code 0
+[2019-09-13 17:49:16,622] 'NoneType' object has no attribute 'owner_mail'
+Traceback (most recent call last):
+  File "./runMES/trans.py", line 1373, in tx_dc_spec
+    if lot_obj.owner_mail:
+AttributeError: 'NoneType' object has no attribute 'owner_mail'
+[2019-09-13 17:49:16,623] {'TNS': 'tx_dc_spec', 'ERR': AttributeError("'NoneType' object has no attribute 'owner_mail'",), 'ITEM_SPEC': 'DEMO-Base-PN', 'DC PLAN': 'DEMO-Kitting', 'VAL': 'test', 'LOT': 'DEMO-01-1', 'EQ': 'DEMO-Kitting-01', 'OP': 'admin1'}
+[2019-09-13 17:49:16,624] 'OOS'
+Traceback (most recent call last):
+  File "./runMES/trans.py", line 1488, in tx_dc
+    if spec_reply['OOS']!='':
+KeyError: 'OOS'
+[2019-09-13 17:49:16,624] {'TNS': 'tx_dc', 'ERR': KeyError('OOS',), 'LOT': 'DEMO-01-1', 'DC_PLAN': 'DEMO-Kitting', 'ITEM_SET': [{'item_name': 'DEMO-Base-PN', 'category': 'DEMO-PN', 'unit': 'PN', 'data_type': 'T', 'val': 'test'}, {'item_name': 'DEMO-Base-SN', 'category': 'DEMO-SN', 'unit': 'SN', 'data_type': 'T', 'val': 'test1'}, {'item_name': 'DEMO-Copper-PN', 'category': 'DEMO-PN', 'unit': 'PN', 'data_type': 'T', 'val': 'test2'}, {'item_name': 'DEMO-Copper-SN', 'category': 'DEMO-SN', 'unit': 'SN', 'data_type': 'T', 'val': 'test3'}], 'EQ': 'DEMO-Kitting-01'}
+[2019-09-13 17:49:16,626] 'OOS'
+Traceback (most recent call last):
+  File "./runMES/views.py", line 957, in lot_dc
+    if reply['OOS']!={}:
+KeyError: 'OOS'
+[2019-09-13 17:49:16,627] {'views': 'lot_dc', 'ERR': KeyError('OOS',)}
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 76446)
+worker 10 buried after 1 seconds
+worker 9 buried after 1 seconds
+worker 8 buried after 1 seconds
+worker 7 buried after 1 seconds
+worker 6 buried after 1 seconds
+worker 5 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Sep 13 17:50:42 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 7.0.2 (clang-700.1.81) on 15 May 2019 10:25:14
+os: Darwin-18.7.0 Darwin Kernel Version 18.7.0: Thu Jun 20 18:42:21 PDT 2019; root:xnu-4903.270.47~4/RELEASE_X86_64
+nodename: joshuaMBP
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 12
+current working directory: /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES
+writing pidfile to /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/uwsgi-master.pid
+detected binary path: /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/bin/uwsgi
+chdir() to /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/
+your processes number limit is 1418
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+building mime-types dictionary from file /etc/apache2/mime.types...1003 entry found
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:65480 (port auto-assigned) fd 3
+Python version: 3.6.4 (v3.6.4:d48ecebad5, Dec 18 2017, 21:07:28)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+Set PythonHome to /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7fbe7a005000
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+[uwsgi-cron] command "{ sleep 66 && kill -HUP $(cat /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/uwsgi-master.pid) && ls -tp /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/uwsgi-* | grep -v '/$' | tail -n +7  | xargs -d '\n' -r rm --; } &" registered as cron task
+mapped 1117336 bytes (1091 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7fbe7a005000 pid: 76491 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 76491)
+spawned uWSGI worker 1 (pid: 76493, cores: 1)
+spawned uWSGI worker 2 (pid: 76494, cores: 1)
+spawned uWSGI worker 3 (pid: 76495, cores: 1)
+spawned uWSGI worker 4 (pid: 76496, cores: 1)
+spawned uWSGI worker 5 (pid: 76497, cores: 1)
+spawned uWSGI worker 6 (pid: 76498, cores: 1)
+spawned uWSGI worker 7 (pid: 76499, cores: 1)
+spawned uWSGI worker 8 (pid: 76500, cores: 1)
+spawned uWSGI worker 9 (pid: 76501, cores: 1)
+spawned uWSGI worker 10 (pid: 76502, cores: 1)
+spawned uWSGI http 1 (pid: 76503)
+subprocess 76492 exited with code 0
+[2019-09-13 17:51:01,145] 'NoneType' object has no attribute 'owner_mail'
+Traceback (most recent call last):
+  File "./runMES/trans.py", line 1373, in tx_dc_spec
+    if lot_obj.owner_mail:
+AttributeError: 'NoneType' object has no attribute 'owner_mail'
+[2019-09-13 17:51:01,146] {'TNS': 'tx_dc_spec', 'ERR': AttributeError("'NoneType' object has no attribute 'owner_mail'",), 'ITEM_SPEC': 'DEMO-Base-PN', 'DC PLAN': 'DEMO-Kitting', 'VAL': 'test', 'LOT': 'DEMO-01-1', 'EQ': 'DEMO-Kitting-01', 'OP': 'admin1'}
+[2019-09-13 17:51:01,146] 'OOS'
+Traceback (most recent call last):
+  File "./runMES/trans.py", line 1488, in tx_dc
+    if spec_reply['OOS']!='':
+KeyError: 'OOS'
+[2019-09-13 17:51:01,147] {'TNS': 'tx_dc', 'ERR': KeyError('OOS',), 'LOT': 'DEMO-01-1', 'DC_PLAN': 'DEMO-Kitting', 'ITEM_SET': [{'item_name': 'DEMO-Base-PN', 'category': 'DEMO-PN', 'unit': 'PN', 'data_type': 'T', 'val': 'test'}, {'item_name': 'DEMO-Base-SN', 'category': 'DEMO-SN', 'unit': 'SN', 'data_type': 'T', 'val': 'test1'}, {'item_name': 'DEMO-Copper-PN', 'category': 'DEMO-PN', 'unit': 'PN', 'data_type': 'T', 'val': 'test2'}, {'item_name': 'DEMO-Copper-SN', 'category': 'DEMO-SN', 'unit': 'SN', 'data_type': 'T', 'val': 'test3'}], 'EQ': 'DEMO-Kitting-01'}
+[2019-09-13 17:51:01,149] 'OOS'
+Traceback (most recent call last):
+  File "./runMES/views.py", line 957, in lot_dc
+    if reply['OOS']!='{}':
+KeyError: 'OOS'
+[2019-09-13 17:51:01,150] {'views': 'lot_dc', 'ERR': KeyError('OOS',)}
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 76503)
+worker 10 buried after 1 seconds
+worker 9 buried after 1 seconds
+worker 8 buried after 1 seconds
+worker 7 buried after 1 seconds
+worker 6 buried after 1 seconds
+worker 5 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Sep 13 17:55:24 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 7.0.2 (clang-700.1.81) on 15 May 2019 10:25:14
+os: Darwin-18.7.0 Darwin Kernel Version 18.7.0: Thu Jun 20 18:42:21 PDT 2019; root:xnu-4903.270.47~4/RELEASE_X86_64
+nodename: joshuaMBP
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 12
+current working directory: /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES
+writing pidfile to /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/uwsgi-master.pid
+detected binary path: /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/bin/uwsgi
+chdir() to /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/
+your processes number limit is 1418
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+building mime-types dictionary from file /etc/apache2/mime.types...1003 entry found
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:49604 (port auto-assigned) fd 3
+Python version: 3.6.4 (v3.6.4:d48ecebad5, Dec 18 2017, 21:07:28)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+Set PythonHome to /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7fae73001e00
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+[uwsgi-cron] command "{ sleep 66 && kill -HUP $(cat /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/uwsgi-master.pid) && ls -tp /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/uwsgi-* | grep -v '/$' | tail -n +7  | xargs -d '\n' -r rm --; } &" registered as cron task
+mapped 1117336 bytes (1091 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7fae73001e00 pid: 76614 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 76614)
+spawned uWSGI worker 1 (pid: 76616, cores: 1)
+spawned uWSGI worker 2 (pid: 76617, cores: 1)
+spawned uWSGI worker 3 (pid: 76618, cores: 1)
+spawned uWSGI worker 4 (pid: 76619, cores: 1)
+spawned uWSGI worker 5 (pid: 76620, cores: 1)
+spawned uWSGI worker 6 (pid: 76621, cores: 1)
+spawned uWSGI worker 7 (pid: 76622, cores: 1)
+spawned uWSGI worker 8 (pid: 76623, cores: 1)
+spawned uWSGI worker 9 (pid: 76624, cores: 1)
+spawned uWSGI worker 10 (pid: 76625, cores: 1)
+spawned uWSGI http 1 (pid: 76626)
+subprocess 76615 exited with code 0
+[2019-09-13 17:55:41,365] 'NoneType' object has no attribute 'owner_mail'
+Traceback (most recent call last):
+  File "./runMES/trans.py", line 1373, in tx_dc_spec
+    if lot_obj.owner_mail:
+AttributeError: 'NoneType' object has no attribute 'owner_mail'
+[2019-09-13 17:55:41,366] {'TNS': 'tx_dc_spec', 'ERR': AttributeError("'NoneType' object has no attribute 'owner_mail'",), 'ITEM_SPEC': 'DEMO-Base-PN', 'DC PLAN': 'DEMO-Kitting', 'VAL': 'test1', 'LOT': 'DEMO-01-1', 'EQ': 'DEMO-Kitting-01', 'OP': 'admin1'}
+[2019-09-13 17:55:41,366] 'OOS'
+Traceback (most recent call last):
+  File "./runMES/trans.py", line 1488, in tx_dc
+    if spec_reply['OOS']!='':
+KeyError: 'OOS'
+[2019-09-13 17:55:41,367] {'TNS': 'tx_dc', 'ERR': KeyError('OOS',), 'LOT': 'DEMO-01-1', 'DC_PLAN': 'DEMO-Kitting', 'ITEM_SET': [{'item_name': 'DEMO-Base-PN', 'category': 'DEMO-PN', 'unit': 'PN', 'data_type': 'T', 'val': 'test1'}, {'item_name': 'DEMO-Base-SN', 'category': 'DEMO-SN', 'unit': 'SN', 'data_type': 'T', 'val': 'test2'}, {'item_name': 'DEMO-Copper-PN', 'category': 'DEMO-PN', 'unit': 'PN', 'data_type': 'T', 'val': 'test3'}, {'item_name': 'DEMO-Copper-SN', 'category': 'DEMO-SN', 'unit': 'SN', 'data_type': 'T', 'val': 'test4'}], 'EQ': 'DEMO-Kitting-01'}
+[2019-09-13 17:55:41,369] 'NEXT_OP'
+Traceback (most recent call last):
+  File "./runMES/views.py", line 960, in lot_dc
+    next_op=reply['NEXT_OP']
+KeyError: 'NEXT_OP'
+[2019-09-13 17:55:41,370] {'views': 'lot_dc', 'ERR': KeyError('NEXT_OP',)}
+[2019-09-13 17:58:52,207] 'NoneType' object has no attribute 'owner_mail'
+Traceback (most recent call last):
+  File "./runMES/trans.py", line 1373, in tx_dc_spec
+    if lot_obj.owner_mail:
+AttributeError: 'NoneType' object has no attribute 'owner_mail'
+[2019-09-13 17:58:52,208] {'TNS': 'tx_dc_spec', 'ERR': AttributeError("'NoneType' object has no attribute 'owner_mail'",), 'ITEM_SPEC': 'DEMO-Base-PN', 'DC PLAN': 'DEMO-Kitting', 'VAL': 't1', 'LOT': 'DEMO-01-1', 'EQ': 'DEMO-Kitting-01', 'OP': 'admin1'}
+[2019-09-13 17:58:52,208] 'OOS'
+Traceback (most recent call last):
+  File "./runMES/trans.py", line 1488, in tx_dc
+    if spec_reply['OOS']!='':
+KeyError: 'OOS'
+[2019-09-13 17:58:52,209] {'TNS': 'tx_dc', 'ERR': KeyError('OOS',), 'LOT': 'DEMO-01-1', 'DC_PLAN': 'DEMO-Kitting', 'ITEM_SET': [{'item_name': 'DEMO-Base-PN', 'category': 'DEMO-PN', 'unit': 'PN', 'data_type': 'T', 'val': 't1'}, {'item_name': 'DEMO-Base-SN', 'category': 'DEMO-SN', 'unit': 'SN', 'data_type': 'T', 'val': 't2'}, {'item_name': 'DEMO-Copper-PN', 'category': 'DEMO-PN', 'unit': 'PN', 'data_type': 'T', 'val': 't3'}, {'item_name': 'DEMO-Copper-SN', 'category': 'DEMO-SN', 'unit': 'SN', 'data_type': 'T', 'val': 't4'}], 'EQ': 'DEMO-Kitting-01'}
+[2019-09-13 17:58:52,212] 'NEXT_OP'
+Traceback (most recent call last):
+  File "./runMES/views.py", line 960, in lot_dc
+    oos=red_font(reply['OOS'])
+KeyError: 'NEXT_OP'
+[2019-09-13 17:58:52,213] {'views': 'lot_dc', 'ERR': KeyError('NEXT_OP',)}
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 76626)
+worker 10 buried after 1 seconds
+worker 9 buried after 1 seconds
+worker 8 buried after 1 seconds
+worker 7 buried after 1 seconds
+worker 6 buried after 1 seconds
+worker 5 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Sep 13 18:02:41 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 7.0.2 (clang-700.1.81) on 15 May 2019 10:25:14
+os: Darwin-18.7.0 Darwin Kernel Version 18.7.0: Thu Jun 20 18:42:21 PDT 2019; root:xnu-4903.270.47~4/RELEASE_X86_64
+nodename: joshuaMBP
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 12
+current working directory: /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES
+writing pidfile to /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/uwsgi-master.pid
+detected binary path: /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/bin/uwsgi
+chdir() to /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/
+your processes number limit is 1418
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+building mime-types dictionary from file /etc/apache2/mime.types...1003 entry found
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:50370 (port auto-assigned) fd 3
+Python version: 3.6.4 (v3.6.4:d48ecebad5, Dec 18 2017, 21:07:28)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+Set PythonHome to /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7fae83801e00
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+[uwsgi-cron] command "{ sleep 66 && kill -HUP $(cat /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/uwsgi-master.pid) && ls -tp /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/uwsgi-* | grep -v '/$' | tail -n +7  | xargs -d '\n' -r rm --; } &" registered as cron task
+mapped 1117336 bytes (1091 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7fae83801e00 pid: 76800 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 76800)
+spawned uWSGI worker 1 (pid: 76803, cores: 1)
+spawned uWSGI worker 2 (pid: 76804, cores: 1)
+spawned uWSGI worker 3 (pid: 76805, cores: 1)
+spawned uWSGI worker 4 (pid: 76806, cores: 1)
+spawned uWSGI worker 5 (pid: 76807, cores: 1)
+spawned uWSGI worker 6 (pid: 76808, cores: 1)
+spawned uWSGI worker 7 (pid: 76809, cores: 1)
+spawned uWSGI worker 8 (pid: 76810, cores: 1)
+spawned uWSGI worker 9 (pid: 76811, cores: 1)
+spawned uWSGI worker 10 (pid: 76812, cores: 1)
+spawned uWSGI http 1 (pid: 76813)
+subprocess 76801 exited with code 0
+[2019-09-13 18:02:50,479] 'NoneType' object has no attribute 'owner_mail'
+Traceback (most recent call last):
+  File "./runMES/trans.py", line 1373, in tx_dc_spec
+    if lot_obj.owner_mail:
+AttributeError: 'NoneType' object has no attribute 'owner_mail'
+[2019-09-13 18:02:50,481] {'TNS': 'tx_dc_spec', 'ERR': AttributeError("'NoneType' object has no attribute 'owner_mail'",), 'ITEM_SPEC': 'DEMO-Base-PN', 'DC PLAN': 'DEMO-Kitting', 'VAL': '1', 'LOT': 'DEMO-01-1', 'EQ': 'DEMO-Kitting-01', 'OP': 'admin1'}
+[2019-09-13 18:02:50,481] 'OOS'
+Traceback (most recent call last):
+  File "./runMES/trans.py", line 1488, in tx_dc
+    if spec_reply['OOS']!='':
+KeyError: 'OOS'
+[2019-09-13 18:02:50,482] {'TNS': 'tx_dc', 'ERR': KeyError('OOS',), 'LOT': 'DEMO-01-1', 'DC_PLAN': 'DEMO-Kitting', 'ITEM_SET': [{'item_name': 'DEMO-Base-PN', 'category': 'DEMO-PN', 'unit': 'PN', 'data_type': 'T', 'val': '1'}, {'item_name': 'DEMO-Base-SN', 'category': 'DEMO-SN', 'unit': 'SN', 'data_type': 'T', 'val': '2'}, {'item_name': 'DEMO-Copper-PN', 'category': 'DEMO-PN', 'unit': 'PN', 'data_type': 'T', 'val': '3'}, {'item_name': 'DEMO-Copper-SN', 'category': 'DEMO-SN', 'unit': 'SN', 'data_type': 'T', 'val': '4'}], 'EQ': 'DEMO-Kitting-01'}
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 76813)
+worker 10 buried after 1 seconds
+worker 9 buried after 1 seconds
+worker 8 buried after 1 seconds
+worker 7 buried after 1 seconds
+worker 6 buried after 1 seconds
+worker 5 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Sep 13 18:27:55 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 7.0.2 (clang-700.1.81) on 15 May 2019 10:25:14
+os: Darwin-18.7.0 Darwin Kernel Version 18.7.0: Thu Jun 20 18:42:21 PDT 2019; root:xnu-4903.270.47~4/RELEASE_X86_64
+nodename: joshuaMBP
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 12
+current working directory: /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES
+writing pidfile to /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/uwsgi-master.pid
+detected binary path: /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/bin/uwsgi
+chdir() to /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/
+your processes number limit is 1418
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+building mime-types dictionary from file /etc/apache2/mime.types...1003 entry found
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:52724 (port auto-assigned) fd 3
+Python version: 3.6.4 (v3.6.4:d48ecebad5, Dec 18 2017, 21:07:28)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+Set PythonHome to /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7fa054801e00
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+[uwsgi-cron] command "{ sleep 66 && kill -HUP $(cat /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/uwsgi-master.pid) && ls -tp /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/uwsgi-* | grep -v '/$' | tail -n +7  | xargs -d '\n' -r rm --; } &" registered as cron task
+mapped 1117336 bytes (1091 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7fa054801e00 pid: 77422 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 77422)
+spawned uWSGI worker 1 (pid: 77424, cores: 1)
+spawned uWSGI worker 2 (pid: 77425, cores: 1)
+spawned uWSGI worker 3 (pid: 77426, cores: 1)
+spawned uWSGI worker 4 (pid: 77427, cores: 1)
+spawned uWSGI worker 5 (pid: 77428, cores: 1)
+spawned uWSGI worker 6 (pid: 77429, cores: 1)
+spawned uWSGI worker 7 (pid: 77430, cores: 1)
+spawned uWSGI worker 8 (pid: 77431, cores: 1)
+spawned uWSGI worker 9 (pid: 77432, cores: 1)
+spawned uWSGI worker 10 (pid: 77433, cores: 1)
+spawned uWSGI http 1 (pid: 77434)
+subprocess 77423 exited with code 0
+[2019-09-13 23:58:53,135] Not Found: /lot/shipped/1
+[2019-09-13 23:58:53,151] Not Found: /favicon.ico
+[2019-09-14 00:00:47,323] Not Found: /lot/shipped/1
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 77434)
+worker 10 buried after 1 seconds
+worker 9 buried after 1 seconds
+worker 8 buried after 1 seconds
+worker 7 buried after 1 seconds
+worker 6 buried after 1 seconds
+worker 5 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.

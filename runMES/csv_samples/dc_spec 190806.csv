@@ -1,0 +1,7 @@
+name,dcitem,exact_text,spec_target,spec_high,spec_low,screen_high,screen_low,OOS_hold_lot,OOS_hold_eq,OOS_mail
+DEMO-AOI-Width,DEMO-AOI-Width,,,20,15,,,1,0,1
+DEMO-AOI-Offset,DEMO-AOI-Offset,,,15,10,,,0,0,0
+DEMO-Reflow-1,DEMO-Reflow-1,,,120,100,,,0,1,1
+DEMO-Reflow-2,DEMO-Reflow-2,,,120,100,,,0,0,0
+DEMO-Etch-S.G.,DEMO-Etch-S.G.,,,1.3,1.2,,,0,1,1
+DEMO-Base-PN,DEMO-Base-PN,BASE-PN-001,,,,,,0,1,1

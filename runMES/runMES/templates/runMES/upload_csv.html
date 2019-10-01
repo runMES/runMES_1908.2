@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+  <h3>Import Work Order CSV File</h3>
+  <form id='upload_file_form' action="{% url "upload_csv" %}" method="" enctype="multipart/form-data">
+    {% csrf_token %}
+    <br>
+    <input type="file" name="csv_file" id="csv_file">
+    <br>
+    <input type='submit' value='Upload'>
+    <br><br>
+    <p>Reply: </p>
+  </form>
+  <div id='reply'></div>
+
+  <script>
+    $("#upload_file_form").submit(function (e) {
+      e.preventDefault();
+      var fileName = $('#csv_file')[0].files[0].name;
+      myfile=new FormData();
+      myfile.append('file_name',$('#csv_file')[0].files[0].name);
+      myfile.append('file',$('#csv_file')[0].files[0]);
+      myfile.append('csrfmiddlewaretoken', '{{ csrf_token }}');
+      $.ajax({
+        method: "POST",
+        data: myfile,
+        async: true,
+        cache: false,
+        processData: false,
+        contentType: false,
+        success: function (ret) {
+          $('#reply').html(ret);
+        }
+      });
+    });
+  </script>
+
+{% endblock %}

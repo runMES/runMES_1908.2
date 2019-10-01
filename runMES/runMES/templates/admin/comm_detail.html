@@ -1,0 +1,11 @@
+{% extends "admin/base_site.html" %}
+
+{% block content %}
+
+  <h3>{{ load_title }}</h3>
+    <br>
+    <table id="dt_list" class="table table-striped table-bordered compact" style="width:30%; margin:0" >
+      {{ form.as_table }}
+    </table>
+
+{% endblock %}

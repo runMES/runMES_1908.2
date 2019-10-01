@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+    <h3>Lot Query EQ</h3>
+
+    <form id="lot_query_eq_form" action='' method=''>
+        <label for='lotid'>Lot ID: </label>
+        <input id='lotid' type='text' name='lot_field' value=''>
+        &nbsp
+        <input type='submit' value='Query'>
+        <p>&nbsp;</p>
+
+        <p><span id='eqlist'></span></p>
+    </form>
+
+    <script>
+        $("#lot_query_eq_form").submit(function (e) {
+            e.preventDefault()
+            $.ajax({
+                method: "POST",
+                data: $(this).serialize(),
+                success: function (e) {
+                    console.log(e);
+                    $('#eqlist').html(e);
+                }
+            });
+        });
+    </script>
+
+{% endblock %}

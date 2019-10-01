@@ -1,0 +1,14 @@
+name,description,owner_mail
+DEMO-AOI,,
+DEMO-Reflow,,
+DEMO-Etch,,
+DEMO-Kitting,,
+DEMO-Break,,'test@steptech.io'
+DEMO-Bin,,'test@steptech.io'
+ST-AOI,,'test@steptech.io'
+ST-Reflow,,'test@steptech.io'
+ST-Etch,,'test@steptech.io'
+ST-Kitting,,'test@steptech.io'
+ST-Break,,'test@steptech.io'
+ST-Plating,,'test@steptech.io'
+ST-Bin,,'test@steptech.io'

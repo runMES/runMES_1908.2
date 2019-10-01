@@ -1,0 +1,86 @@
+[2019-09-13 14:49:33,870] {'MQTT': 'mq_log_EAP_IF_srv', 'STATUS': 'active'}
+[2019-09-13 14:49:33,870] {'EAP_IF': 'start mq_log_EAP_srv'}
+[2019-09-13 14:49:33,875] {'EAP_IF': 'start step_in_srv'}
+[2019-09-13 14:49:33,878] {'EAP_IF': 'start step_out_srv'}
+[2019-09-13 14:49:33,879] {'EAP_IF': 'start dc_srv'}
+[2019-09-13 14:49:33,884] {'EAP_IF': 'start lot_break_srv'}
+[2019-09-13 14:49:33,886] {'EAP_IF': 'start lot_bin_srv'}
+[2019-09-13 14:49:33,889] {'EAP_IF': 'start eq_record_srv'}
+[2019-09-13 14:49:33,896] {'EAP_IF': 'start lot_record_srv'}
+[2019-09-13 14:49:33,898] {'MQTT': 'mq_eq_record_srv', 'STATUS': 'active'}
+[2019-09-13 14:49:33,901] {'EAP_IF': 'start qry_dcplan_item_srv'}
+[2019-09-13 14:49:33,906] {'EAP_IF': 'start qry_eq_record_srv'}
+[2019-09-13 14:49:33,912] {'EAP_IF': 'start qry_lot_record_srv'}
+[2019-09-13 14:49:33,914] {'EAP_IF': 'start qry_lot_srv'}
+[2019-09-13 14:49:33,921] {'EAP_IF': 'start qry_lot_bin_srv'}
+[2019-09-13 14:49:33,924] {'EAP_IF': 'start qry_eq_lot_srv'}
+[2019-09-13 14:49:33,927] {'EAP_IF': 'start qry_eq_product_lot_srv'}
+[2019-09-13 14:49:33,932] {'EAP_IF': 'start S1F1_srv'}
+[2019-09-13 14:49:33,934] {'EAP_IF': 'start alarm_srv'}
+[2019-09-13 14:49:34,006] {'MQTT': 'mq_lot_record_srv', 'STATUS': 'active'}
+[2019-09-13 14:49:34,060] {'MQTT': 'mq_qry_eq_record_srv', 'STATUS': 'active'}
+[2019-09-13 14:49:34,111] {'MQTT': 'mq_qry_lot_record_srv', 'STATUS': 'active'}
+[2019-09-13 14:49:34,163] {'MQTT': 'mq_qry_lot_srv', 'STATUS': 'active'}
+[2019-09-13 14:49:34,217] {'MQTT': 'mq_qry_lot_srv', 'STATUS': 'active'}
+[2019-09-13 14:49:34,268] {'MQTT': 'mq_qry_product_lot_srv', 'STATUS': 'active'}
+[2019-09-13 14:49:34,324] {'MQTT': 'mq_S1F1_srv', 'STATUS': 'active'}
+[2019-09-13 14:55:42,502] {'MQTT': 'mq_log_EAP_IF_srv', 'STATUS': 'active'}
+[2019-09-13 14:55:42,503] {'EAP_IF': 'start mq_log_EAP_srv'}
+[2019-09-13 14:55:42,506] {'EAP_IF': 'start step_in_srv'}
+[2019-09-13 14:55:42,510] {'EAP_IF': 'start step_out_srv'}
+[2019-09-13 14:55:42,511] {'EAP_IF': 'start dc_srv'}
+[2019-09-13 14:55:42,515] {'EAP_IF': 'start lot_break_srv'}
+[2019-09-13 14:55:42,519] {'MQTT': 'mq_dc_srv', 'STATUS': 'active'}
+[2019-09-13 14:55:42,522] {'EAP_IF': 'start lot_bin_srv'}
+[2019-09-13 14:55:42,525] {'EAP_IF': 'start eq_record_srv'}
+[2019-09-13 14:55:42,531] {'EAP_IF': 'start lot_record_srv'}
+[2019-09-13 14:55:42,535] {'EAP_IF': 'start qry_dcplan_item_srv'}
+[2019-09-13 14:55:42,537] {'EAP_IF': 'start qry_eq_record_srv'}
+[2019-09-13 14:55:42,541] {'EAP_IF': 'start qry_lot_record_srv'}
+[2019-09-13 14:55:42,546] {'EAP_IF': 'start qry_lot_srv'}
+[2019-09-13 14:55:42,552] {'EAP_IF': 'start qry_lot_bin_srv'}
+[2019-09-13 14:55:42,555] {'EAP_IF': 'start qry_eq_lot_srv'}
+[2019-09-13 14:55:42,559] {'EAP_IF': 'start qry_eq_product_lot_srv'}
+[2019-09-13 14:55:42,563] {'EAP_IF': 'start S1F1_srv'}
+[2019-09-13 14:55:42,569] {'EAP_IF': 'start alarm_srv'}
+[2019-09-13 14:55:42,577] {'MQTT': 'mq_lot_bin_srv', 'STATUS': 'active'}
+[2019-09-13 14:55:42,632] {'MQTT': 'mq_eq_record_srv', 'STATUS': 'active'}
+[2019-09-13 14:55:42,742] {'MQTT': 'mq_lot_record_srv', 'STATUS': 'active'}
+[2019-09-13 14:55:42,792] {'MQTT': 'mq_qry_eq_record_srv', 'STATUS': 'active'}
+[2019-09-13 14:55:42,844] {'MQTT': 'mq_qry_lot_record_srv', 'STATUS': 'active'}
+[2019-09-13 14:55:42,895] {'MQTT': 'mq_qry_lot_srv', 'STATUS': 'active'}
+[2019-09-13 14:55:42,945] {'MQTT': 'mq_qry_lot_bin_srv', 'STATUS': 'active'}
+[2019-09-13 14:55:43,000] {'MQTT': 'mq_qry_lot_srv', 'STATUS': 'active'}
+[2019-09-13 14:55:43,056] {'MQTT': 'mq_qry_product_lot_srv', 'STATUS': 'active'}
+[2019-09-13 14:55:43,110] {'MQTT': 'mq_S1F1_srv', 'STATUS': 'active'}
+[2019-09-13 14:55:43,161] {'MQTT': 'mq_alarm_srv', 'STATUS': 'active'}
+[2019-09-13 15:56:05,610] {'MQTT': 'mq_log_EAP_IF_srv', 'STATUS': 'active'}
+[2019-09-13 15:56:05,610] {'EAP_IF': 'start mq_log_EAP_srv'}
+[2019-09-13 15:56:05,617] {'EAP_IF': 'start step_in_srv'}
+[2019-09-13 15:56:05,619] {'EAP_IF': 'start step_out_srv'}
+[2019-09-13 15:56:05,622] {'EAP_IF': 'start dc_srv'}
+[2019-09-13 15:56:05,624] {'EAP_IF': 'start lot_break_srv'}
+[2019-09-13 15:56:05,625] {'EAP_IF': 'start lot_bin_srv'}
+[2019-09-13 15:56:05,627] {'MQTT': 'mq_step_out_srv', 'STATUS': 'active'}
+[2019-09-13 15:56:05,628] {'EAP_IF': 'start eq_record_srv'}
+[2019-09-13 15:56:05,632] {'EAP_IF': 'start lot_record_srv'}
+[2019-09-13 15:56:05,635] {'EAP_IF': 'start qry_dcplan_item_srv'}
+[2019-09-13 15:56:05,638] {'EAP_IF': 'start qry_eq_record_srv'}
+[2019-09-13 15:56:05,640] {'EAP_IF': 'start qry_lot_record_srv'}
+[2019-09-13 15:56:05,643] {'EAP_IF': 'start qry_lot_srv'}
+[2019-09-13 15:56:05,645] {'EAP_IF': 'start qry_lot_bin_srv'}
+[2019-09-13 15:56:05,649] {'EAP_IF': 'start qry_eq_lot_srv'}
+[2019-09-13 15:56:05,654] {'EAP_IF': 'start qry_eq_product_lot_srv'}
+[2019-09-13 15:56:05,655] {'EAP_IF': 'start S1F1_srv'}
+[2019-09-13 15:56:05,657] {'EAP_IF': 'start alarm_srv'}
+[2019-09-13 15:56:05,679] {'MQTT': 'mq_dc_srv', 'STATUS': 'active'}
+[2019-09-13 15:56:05,734] {'MQTT': 'mq_lot_break_srv', 'STATUS': 'active'}
+[2019-09-13 15:56:05,787] {'MQTT': 'mq_lot_bin_srv', 'STATUS': 'active'}
+[2019-09-13 15:56:05,843] {'MQTT': 'mq_eq_record_srv', 'STATUS': 'active'}
+[2019-09-13 15:56:05,893] {'MQTT': 'mq_lot_record_srv', 'STATUS': 'active'}
+[2019-09-13 15:56:05,995] {'MQTT': 'mq_qry_eq_record_srv', 'STATUS': 'active'}
+[2019-09-13 15:56:06,051] {'MQTT': 'mq_qry_lot_record_srv', 'STATUS': 'active'}
+[2019-09-13 15:56:06,106] {'MQTT': 'mq_qry_lot_srv', 'STATUS': 'active'}
+[2019-09-13 15:56:06,158] {'MQTT': 'mq_qry_lot_bin_srv', 'STATUS': 'active'}
+[2019-09-13 15:56:06,209] {'MQTT': 'mq_qry_product_lot_srv', 'STATUS': 'active'}
+[2019-09-13 15:56:06,262] {'MQTT': 'mq_S1F1_srv', 'STATUS': 'active'}

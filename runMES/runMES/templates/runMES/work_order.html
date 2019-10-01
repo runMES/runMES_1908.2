@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+  <h3>Work Order</h3>
+
+  <form id="work_order_form" action='' method=''>
+    <table id="dt_list" class="table table-striped table-bordered compact" style="width:80%; margin:0">
+      {{ form }}
+    </table>
+    <br>
+    <input type='submit' value='Confirm'>
+    <br>
+    <p>Reply: <span id='reply'></span></p>
+  </form>
+
+  <script>
+      $("#work_order_form").submit(function (e) {
+          e.preventDefault()
+          $.ajax({
+              method: "POST",
+              data: $(this).serialize(),
+              success: function (ret) {
+                  $('#reply').html(ret);
+              }
+          });
+      });
+  </script>
+
+{% endblock %}

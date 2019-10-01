@@ -1,0 +1,227 @@
+{% load static %}
+{% load i18n %}
+{% load runMES_extras %}
+
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+  <title>runMES Modeling Import</title>
+  <link rel="stylesheet" type="text/css" href="{% static '/css/bootstrap.css'%}">
+  <link rel="stylesheet" type="text/css" href="{% static '/css/jquery.dataTables.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static '/css/buttons.bootstrap.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static '/css/buttons.dataTables.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static '/css/select.dataTables.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static '/images/sort_both.png' %}">
+  <link rel="stylesheet" type="text/css" href="{% static '/images/sort_asc.png' %}">
+  <link rel="icon" href="{% static 'images/glyphicons-halflings.png' %}">
+  <link rel="icon" href="{% static 'images/glyphicons-halflings-white.png' %}">
+
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap-datetimepicker.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/datetimepicker.css' %}">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'admin/css/forms.css' %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'admin/css/base.css' %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'admin/css/widgets.css' %}"/>
+
+
+  <link rel="stylesheet" type="text/css" href="{% static 'fonts/Ubuntu-B.ttf' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'fonts/Ubuntu-BI.ttf' %}">
+
+  <script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap-datetimepicker.min.js' %}"></script>
+  <script src="{% static 'js/locales.js' %}"></script>
+  <script src="{% static 'js/moment-with-locales.js' %}"></script>
+  {#    <script src="{% static 'js/bootstrap-treeview.min.js' %}"></script>#}
+
+  <script src="{% static '/js/jquery.dataTables.min.js' %}"></script>
+  <script src="{% static '/js/dataTables.bootstrap.min.js' %}"></script>
+  <script src="{% static '/js/buttons.bootstrap.js' %}"></script>
+  <script src="{% static '/js/dataTables.buttons.js' %}"></script>
+  <script src="{% static '/js/dataTables.select.min.js' %}"></script>
+
+  <script type="text/javascript" src="{% static 'admin/jsi18n.html'%}"></script>
+  <script type="text/javascript" src="{% static 'admin/js/core.js' %}"></script>
+  <script type="text/javascript" src="{% static 'admin/js/admin/RelatedObjectLookups.js' %}"></script>
+  <script type="text/javascript" src="{% static 'admin/js/vendor/jquery/jquery.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'admin/js/jquery.init.js' %}"></script>
+  <script type="text/javascript" src="{% static 'admin/js/actions.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'admin/js/calendar.js' %}"></script>
+  <script type="text/javascript" src="{% static 'admin/js/admin/DateTimeShortcuts.js' %}"></script>
+
+  <link rel="icon" href="{% static 'images/favicon.ico' %}">
+
+  <style type='text/css'>
+
+    table, th, td {
+      width: auto;
+      table-layout: auto;
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 2px;
+    }
+    td {
+      class:"col-sm-1";
+    }
+    label {
+      display: inline-block;
+      text-align: left;
+      width: 90px;
+    }
+
+    h4 {
+      font-family: Ubuntu, Arial, Helvetica, sans-serif;
+    }
+
+    a:link {
+      color: #666666;
+    }
+
+    a:visited {
+      color: grey;
+    }
+
+    a:hover {
+      color: grey;
+    }
+
+    a:active {
+      color: #a2aec7;
+    }
+
+    .sidebar-nav {
+      background-color: Linen;
+    }
+
+    .logo {
+      color: linen;
+    }
+
+    input[type=submit] {
+      background: #666;
+    }
+
+    input[readonly]{
+      border-color: unset;
+      border-style: unset;
+      border-width: 0;
+      background-color: unset;
+      color: rgb(84, 84, 84);
+      padding: 0px 0px;
+    }
+
+    .dropdown-menu li {
+      list-style-type: none;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand text-warning" href="/modeling/"><span class='logo'>runMES Modeling Import</span></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data Collection<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            {% if user|has_group:'Admin' %}
+            <li><a href="/modeling/dc_category/">Data Collection Category</a></li>
+            <li><a href="/modeling/dc_item/">Data Collection Items</a></li>
+            <li><a href="/modeling/dc_spec/">Data Collection Spec</a></li>
+            <li><a href="/modeling/dc_plan/">Data Collection Plan</a></li>
+            {% endif %}
+          </ul>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EQ<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            {% if user|has_group:'Admin' %}
+            <li><a href="/modeling/area/">Area</a></li>
+            <li><a href="/modeling/eq_group/">EQ Group</a></li>
+            <li><a href="/modeling/eq/">Equipment</a></li>
+            {% endif %}
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Records<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            {% if user|has_group:'Admin' %}
+            <li><a href="/modeling/lot_record/">Lot Record</a></li>
+            <li><a href="/modeling/eq_record/">EQ Record</a></li>
+            {% endif %}
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Binning<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            {% if user|has_group:'Admin' %}
+            <li><a href="/modeling/bin_grade/">Bin Grade</a></li>
+            <li><a href="/modeling/binning/">Binning</a></li>
+            {% endif %}
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Process/Step<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            {% if user|has_group:'Admin' %}
+            <li><a href="/modeling/step_category/">Step Category</a></li>
+            <li><a href="/modeling/process_step/">Process Step</a></li>
+            <li><a href="/modeling/process">Process</a></li>
+            <li><a href="/modeling/product">Product</a></li>
+            <li><a href="/modeling/breaking/">Breaking</a></li>
+            {% endif %}
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Codes<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            {% if user|has_group:'Admin' %}
+            <li><a href="/modeling/bonus_scrap/">Lot Bonus/Scrap Code</a></li>
+            <li><a href="/modeling/lot_hold_release">Lot Hold/Release Code</a></li>
+            <li><a href="/modeling/eq_hold_release">EQ Hold/Release Code</a></li>
+            {% endif %}
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            {% if user|has_group:'Admin' %}
+            <li><a href="/modeling/user_account/">User Account</a></li>
+            <li><a href="/accounts/logout/">{% trans 'Logout' %}</a></li>
+            {% endif %}
+          </ul>
+        </li>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">{{ user.username }}&nbsp|&nbsp{{ user|group_list}}</a></li>
+        </ul>
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="col-sm-10 ">
+  {% block content %}{% endblock %}
+</div>
+
+
+</body>
+</html>

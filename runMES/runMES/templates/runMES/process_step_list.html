@@ -1,0 +1,28 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/minimal-table.css' %}">
+
+<h3>Process Step List</h3>
+<table>
+    <tr>
+        <td><strong>SEQUENCE</strong></td>
+        <td><strong>PROCESS STEP</strong></td>
+        <td><strong>STEP RECIPE</strong></td>
+        <td><strong>STEP DCPLAN</strong></td>
+    </tr>
+
+
+    {% for step,recipe,dcplan in steplist %}
+        <tr>
+            <td>{{forloop.counter}}</td>
+            <td>{{step}}</td>
+            <td>{{recipe}}</td>
+            <td>{{dcplan}}</td>
+        </tr>
+    {% endfor %}
+
+</table>
+{% endblock %}

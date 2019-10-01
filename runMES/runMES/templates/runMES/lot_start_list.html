@@ -1,0 +1,63 @@
+
+<form id="lot_add_form" action='' method=''>
+  {% csrf_token %}
+    <table id="WO_Info" class="table table-striped table-bordered compact" style="width:70%; margin:0">
+      <tr>
+          <td><strong> Product </strong></td>
+          <td><strong> Qty </strong></td>
+          <td><strong> QTY LEFT </strong></td>
+          <td><strong> OWNER </strong></td>
+          <td><strong> TARGET DATE </strong></td>
+      </tr>
+          <tr>
+              <td>{{ product }}</td>
+              <td>{{ qty }}</td>
+              <td>{{ qty_left }}</td>
+              <td>{{ owner }}</td>
+              <td>{{ target_date }}</td>
+          </tr>
+    </table>
+    <table id="lot_list" class="table table-striped table-bordered compact" style="width:70%; margin:0">
+        <br>
+        <tr>
+{#          <td><strong> WORK ORDER </strong></td>#}
+            <td><strong> LOT </strong></td>
+            <td><strong> QTY </strong></td>
+            <td><strong> OP </strong></td>
+            <td><strong> LOT START DATE </strong></td>
+        </tr>
+
+        {% for l in lotstart_hist %}
+            <tr>
+{#              <td> {{ l.work_order }} </td>#}
+                <td> {{ l.lot }} </td>
+                <td> {{ l.qty }} </td>
+                <td> {{ l.op }} </td>
+                <td> {{ l.start_date }} </td>
+            </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <h3>Add New Lot</h3>
+    <br>
+    {{ form.as_p }}
+    <br>
+    <input class='button-state-grey' type='submit' value='Add Lot'>
+    <p></p>
+    <p>Reply: </p>
+    <div id='reply'></div>
+</form>
+
+<script>
+    $("#lot_add_form").submit(function (e) {
+        e.preventDefault()
+        $.ajax({
+            method: "POST",
+            url: 'lot_add/',
+            data: $(this).serialize(),
+            success: function (ret) {
+                $('#reply').html(ret);
+            }
+        });
+    });
+</script>

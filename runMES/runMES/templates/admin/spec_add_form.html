@@ -1,0 +1,39 @@
+{% extends 'admin/change_form.html' %}
+
+{% block content %}
+
+  <h3>Select Spec Item</h3>
+  <form id="spec_item_form" action='' method=''>
+    {% csrf_token %}
+    {% block field_sets %}
+    {% for fieldset in adminform %}
+      {% include "admin/includes/fieldset.html" %}
+    {% endfor %}
+    {% endblock %}
+    <input type='submit' value='Query'>
+  </form>
+  <br>
+  <div id="dc"></div>
+
+{% endblock %}
+
+{% block extrahead %}
+  {{ block.super }}
+  <script type="text/javascript">
+    (function($){
+      $(document).ready(function() {
+        $("#spec_item_form").submit(function (e) {
+          e.preventDefault();
+          $.ajax({
+            method: "POST",
+            url: '',
+            data: $(this).serialize(),
+            success: function (e) {
+              $('#dc').html(e);
+            }
+          });
+        });
+      });
+    })(django.jQuery);
+  </script>
+{% endblock %}

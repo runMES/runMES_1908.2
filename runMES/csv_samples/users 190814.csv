@@ -1,0 +1,17 @@
+name,password,OP,Super,Manager,Admin
+op1,steptech,1,,,
+op2,steptech,1,,,
+op3,steptech,1,,,
+op4,steptech,1,,,
+super1,steptech,1,1,,
+super2,steptech,1,1,,
+super3,steptech,1,1,,
+super4,steptech,1,1,,
+manager1,steptech,1,1,1,
+manager2,steptech,1,,1,
+manager3,steptech,1,,1,
+manager4,steptech,1,,1,
+admin1,steptech,1,1,1,1
+admin2,steptech,,,,1
+admin3,steptech,,,,1
+admin4,steptech,,,,1

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <h3>Lot Status Change</h3>
+  <h4>Lot: {{lot_inst.name}} Current Status: {{lot_inst.status}} </h4>
+  <form action='' method='POST'>
+    {% csrf_token %}
+    <table>
+    {{ form }}
+    </table>
+    <br>
+    <input type='submit' value='submit' />
+  </form>
+
+
+
+{% endblock %}

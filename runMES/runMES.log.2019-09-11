@@ -1,0 +1,20 @@
+[2019-09-11 11:03:44,151] {'MQTT': 'mq_log_runMES_srv', 'STATUS': 'active'}
+[2019-09-11 12:33:33,220] name 'alarm_code_txt' is not defined
+Traceback (most recent call last):
+  File "/Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/runMES/trans.py", line 2185, in tx_alarm_msg
+    if alarm_code_txt=='' or alarm_msg_txt=='' or source_txt=='' or set_clear_txt=='':
+NameError: name 'alarm_code_txt' is not defined
+[2019-09-11 12:34:09,625] name 'alarm_code_txt' is not defined
+Traceback (most recent call last):
+  File "/Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/runMES/trans.py", line 2199, in tx_alarm_msg
+    return {'TNS':tns,'ECD':'0','ETX':_('Succeed'),'ALARM_CODE':alarm_code_txt,'ALARM_MSG':alarm_msg_txt,'SOURCE_TXT':source_txt,'SET_CLEAR':str(set_clear_txt),}
+NameError: name 'alarm_code_txt' is not defined
+[2019-09-11 22:48:57,956] {'views': 'cfm_job', 'cfm_job': 'started'}
+[2019-09-11 22:48:57,956] {'views': 'lot_job', 'status': 'started'}
+[2019-09-11 22:48:57,957] {'MQTT': 'mq_log_runMES_srv', 'STATUS': 'active'}
+[2019-09-11 22:49:30,041] {'TNS': 'tx_alarm_msg', 'alarm_id': 'ALARM-TEST-01', 'alarm_msg': 'Alram Msg', 'set_clear': '1', 'source': 'EAP emulator', 'category': ''}
+[2019-09-11 22:53:22,558] {'TNS': 'tx_alarm_msg', 'alarm_id': 'ALARM-TEST-01', 'alarm_msg': 'Alram Msg', 'set_clear': '1', 'source': 'EAP emulator', 'category': ''}
+[2019-09-11 22:54:32,356] {'TNS': 'tx_alarm_msg', 'alarm_id': 'ALARM-TEST-01', 'alarm_msg': 'Alarm Msg', 'set_clear': '1', 'source': 'EAP emulator', 'category': 'test'}
+[2019-09-11 23:41:20,598] {'views': 'cfm_job', 'cfm_job': 'started'}
+[2019-09-11 23:41:20,598] {'MQTT': 'mq_log_runMES_srv', 'STATUS': 'active'}
+[2019-09-11 23:41:20,598] {'views': 'lot_job', 'status': 'started'}

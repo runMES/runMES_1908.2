@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+  <h3>Lot Query DC</h3>
+
+  <form id="lot_query_dc_form" action='' method=''>
+    <label for='lotid'>Lot ID: </label>
+    <input id='lotid' type='text' name='lot_field' value=''>
+    <br><br>
+    <label for='eqid'>EQ ID: </label>
+    <input id='eqid' type='text' name='eq_field' value=''>
+    <br><br>
+    <input type='submit' value='Query'>
+    <p>&nbsp;</p>
+
+  </form>
+  <div id="dc"></div>
+
+  <script>
+    $("#lot_query_dc_form").submit(function (e) {
+      e.preventDefault();
+      $.ajax({
+        method: "POST",
+        data: $(this).serialize(),
+        success: function (e) {
+          $('#dc').html(e);
+        }
+      });
+    });
+  </script>
+
+{% endblock %}

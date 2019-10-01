@@ -1,0 +1,4 @@
+name,ERP_ref,product,lot_type,qty,lot_priority,target_date,owner,owner_email,owner_phone,instruction,annotation
+DEMO-01,ERP_1,DEMO-PCB,D,100,5,2019-07-30,Joshua,test@steptech.io,123,WO_instruction,Annotation_test
+DEMO-02,ERP_2,DEMO-PCB,P,200,4,2019-07-30,Joshua,test@steptech.io,123,WO_instruction,Annotation_test
+DEMO-03,ERP_3,DEMO-PCB,E,100,3,2019-07-30,Joshua,test@steptech.io,123,WO_instruction,Annotation_test

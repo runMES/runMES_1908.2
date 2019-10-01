@@ -1,0 +1,6 @@
+runMES Release Notes
+
+2019/08/30 19_08   	initial release
+2019/09/03 19_08.1 	add new query for finished lot, no database change
+2019/09/13 19_08.2 	add EAP alarm message, fix workorder import row count bug, DC reply msg error, 
+										finshed/shipped/terminated lot list hyper link not fount errors.

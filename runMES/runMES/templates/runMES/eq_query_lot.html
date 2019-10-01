@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<h3>EQ Query Lot for StepIn</h3>
+
+<form id="eq_query_lot_form" action='' method=''>
+  <label for='eq'>EQ ID: </label>
+  <input id='eqid' type='text' name='eq_field' value=''>
+  &nbsp
+  <input type='submit' value='Query'>
+  <p>&nbsp;</p>
+
+  <p><span id='lotlist'></span></p>
+</form>
+
+<script>
+  $("#eq_query_lot_form").submit(function(e) {
+    e.preventDefault()
+    $.ajax({
+      method: "POST",
+      data: $(this).serialize(),
+      success: function(e) {
+        console.log(e);
+        $('#lotlist').html(e);
+      }
+    });
+  });
+</script>
+
+{% endblock %}

@@ -1,0 +1,25 @@
+
+<form id='comm_clean_form'>
+  <h3>{{ load_title }}</h3>
+  <br>
+  {{ form.as_p }}
+  <br>
+  <input hidden="True" type="text" name="eq" value= "{{ eq }}">
+  <input hidden="True" type="text" name="anno" value= "{{ anno }}">
+  <input type="submit" value="Select">
+  <span id='reply'></span>
+</form>
+
+<script>
+  $("#comm_clean_form").submit(function(e){
+    e.preventDefault()
+    $.ajax({
+      method: "POST",
+      url: '/lot/eq_step_in/',
+      data: $(this).serialize(),
+      success: function(ret){
+          $('#reply').html(ret);
+      }
+    });
+  });
+</script>

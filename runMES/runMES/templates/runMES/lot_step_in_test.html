@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+    <h3>Lot Tk-In</h3>
+
+    <form id="tk_in_form"  action=''  method=''>
+      <div>
+        {% crispy form form.helper %}
+      </div>
+
+{#      <div>#}
+{#        <input class="btn btn-default" type='submit' value="TK-In">#}
+{#      </div>#}
+
+      <div>
+        <p>Reply: <span id='reply'></span></p>
+      </div>
+      <br>
+      <div>
+        <h4>Work Instruction:</h4>
+        <br><br><br><br><br><br><br><br>
+        <div>
+          {{ instruction_img }}
+        </div>
+
+      </div>
+
+    </form>
+
+    <script>
+      $("#tk_in_form").submit(function(e){
+        e.preventDefault()
+        $.ajax({
+          method: "POST",
+          data: $(this).serialize(),
+          success: function(ret){
+              $('#reply').html(ret);
+          }
+        });
+      });
+    </script>
+
+{% endblock %}

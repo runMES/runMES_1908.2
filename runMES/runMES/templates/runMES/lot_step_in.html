@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+    <h3>Lot Step In</h3>
+
+    <form id="step_in_form" action='' method=''>
+      <table id="tableid">
+        <br>
+        {{ form.as_p}}
+      </table>
+      <br>
+      <input type='submit' value='Step In'>
+      <br><br>
+      <p>Reply: <span id='reply'></span></p>
+      <br>
+    </form>
+
+    <script>
+      $("#step_in_form").submit(function(e){
+        e.preventDefault()
+        $.ajax({
+          method: "POST",
+          data: $(this).serialize(),
+          success: function(ret){
+              $('#reply').html(ret);
+          }
+        });
+      });
+    </script>
+
+{% endblock %}

@@ -1,0 +1,7 @@
+name,description,hold_release,,,,
+EH1-EQ-Check,,H,,,,
+EH2-EQ-Down,,H,,,,
+EH3-EQ-OOS,,H,,,,
+EH4-Engineer-Hold,,H,,,,
+ER-1EQ-Recovered,,R,,,,
+ER2-Engineer-Release,,R,,,,

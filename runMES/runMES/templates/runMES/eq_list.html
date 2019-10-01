@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+
+{#    <link rel="stylesheet" type="text/css" href="{% static 'css/minimal-table.css' %}">#}
+    <h3>EQ List</h3>
+
+    {% if eq_list %}
+        <table id="dt_list" class="table table-striped table-bordered compact" style="width:60%; margin:0">
+            <tr>
+                <td><strong>EQ</strong></td>
+                <td><strong>Is_Hold</strong></td>
+                <td><strong>Is_Available</strong></td>
+                <td><strong>State</strong></td>
+                <td><strong>EQ Group</strong></td>
+            </tr>
+            {% for myeq in eq_list %}
+                <tr>
+                    <td><a href='{{ myeq.get_absolute_url }}'> {{ myeq.name }} </a></td>
+                    <td>{{ myeq.is_hold }}</td>
+                    <td>{{ myeq.state.is_available }}</td>
+                    <td>{{ myeq.state }}</td>
+                    <td>{{ myeq.group.name }}</td>
+
+                </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>There are no EQ.</p>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+    <h3>EQ Hold</h3>
+
+    <form id="eq_hold_form" action='' method=''>
+      <table id="tableid">
+        {{ form.as_p }}
+      </table>
+      <br>
+      <input type='submit' value='EQ Hold'>
+      <br>
+      <p>Reply: <span id='reply'></span></p>
+    </form>
+
+    <script>
+      $("#eq_hold_form").submit(function(e){
+        e.preventDefault()
+        $.ajax({
+          method: "POST",
+          data: $(this).serialize(),
+          success: function(ret){
+              $('#reply').html(ret);
+          }
+        });
+      });
+    </script>
+
+{% endblock %}

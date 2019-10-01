@@ -1,0 +1,70 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Aug 16 10:56:31 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.46.4) on 14 May 2019 06:35:16
+os: Darwin-18.7.0 Darwin Kernel Version 18.7.0: Thu Jun 20 18:42:21 PDT 2019; root:xnu-4903.270.47~4/RELEASE_X86_64
+nodename: joshuaMBP
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/joshuachin1/Dropbox/workspace/runMES/runMES_1908rc1i/runMES
+writing pidfile to /Users/joshuachin1/Dropbox/workspace/runMES/runMES_1908rc1i/uwsgi-master.pid
+detected binary path: /Users/joshuachin1/Dropbox/workspace/runMES/runMES_1908rc1i/bin/uwsgi
+chdir() to /Users/joshuachin1/Dropbox/workspace/runMES/runMES_1908rc1i/runMES/
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 10240
+building mime-types dictionary from file /etc/apache2/mime.types...1003 entry found
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on localhost:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:54153 (port auto-assigned) fd 3
+Python version: 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 03:03:55)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+Set PythonHome to /Users/joshuachin1/Dropbox/workspace/runMES/runMES_1908rc1i/
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7fe98f001e00
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+[uwsgi-cron] command "{ sleep 66 && kill -HUP $(cat /Users/joshuachin1/Dropbox/workspace/runMES/runMES_1908rc1i/uwsgi-master.pid) && ls -tp /Users/joshuachin1/Dropbox/workspace/runMES/runMES_1908rc1i/runMES/uwsgi-* | grep -v '/$' | tail -n +7  | xargs -d '\n' -r rm --; } &" registered as cron task
+mapped 1117336 bytes (1091 KB) for 10 cores
+*** Operational MODE: preforking ***
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/config.py", line 558, in configure
+    handler = self.configure_handler(handlers[name])
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/config.py", line 744, in configure_handler
+    result.setLevel(logging._checkLevel(level))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 195, in _checkLevel
+    raise ValueError("Unknown level: %r" % level)
+ValueError: Unknown level: 'Info'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./runMES/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/Users/joshuachin1/Dropbox/workspace/runMES/runMES_1908rc1i/lib/python3.6/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/Users/joshuachin1/Dropbox/workspace/runMES/runMES_1908rc1i/lib/python3.6/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/Users/joshuachin1/Dropbox/workspace/runMES/runMES_1908rc1i/lib/python3.6/site-packages/django/utils/log.py", line 76, in configure_logging
+    logging_config_func(logging_settings)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/config.py", line 795, in dictConfig
+    dictConfigClass(config).configure()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/config.py", line 566, in configure
+    '%r: %s' % (name, e))
+ValueError: Unable to configure handler 'file': Unknown level: 'Info'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28384)
+spawned uWSGI worker 1 (pid: 28391, cores: 1)
+spawned uWSGI worker 2 (pid: 28392, cores: 1)
+spawned uWSGI worker 3 (pid: 28393, cores: 1)
+spawned uWSGI worker 4 (pid: 28394, cores: 1)
+spawned uWSGI worker 5 (pid: 28395, cores: 1)
+spawned uWSGI worker 6 (pid: 28396, cores: 1)
+spawned uWSGI worker 7 (pid: 28397, cores: 1)
+spawned uWSGI worker 8 (pid: 28398, cores: 1)
+spawned uWSGI worker 9 (pid: 28399, cores: 1)
+spawned uWSGI worker 10 (pid: 28400, cores: 1)
+spawned uWSGI http 1 (pid: 28401)
+subprocess 28388 exited with code 0

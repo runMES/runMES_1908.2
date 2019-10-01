@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+  <h3>EQ Step In</h3>
+  <br>
+  <form id="eq_step_in_qry_form" action='' method=''>
+    <label for='eqid'>EQ ID: </label>
+    <input id='eqid' type='text' name='eq_field' value=''>
+    <br><br>
+    <input type='submit' value='Query'>
+    <p>&nbsp;</p>
+
+  </form>
+  <div id="eq_qry_lot"></div>
+
+  <script>
+    $("#eq_step_in_qry_form").submit(function (e) {
+      e.preventDefault();
+      $.ajax({
+        method: "POST",
+        data: $(this).serialize(),
+        success: function (e) {
+          $('#dc').html(e);
+        }
+      });
+    });
+  </script>
+
+{% endblock %}

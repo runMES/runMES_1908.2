@@ -1,0 +1,25 @@
+name,description,dcitems,dcitem_spec
+DEMO-AOI,,DEMO-AOI-Width,DEMO-AOI-Width
+DEMO-AOI,,DEMO-AOI-Offset,DEMO-AOI-Offset
+DEMO-Reflow,,DEMO-Reflow-1,DEMO-Reflow-1
+DEMO-Reflow,,DEMO-Reflow-2,DEMO-Reflow-2
+DEMO-Etch,,DEMO-Etch-S.G.,DEMO-Etch-S.G.
+DEMO-Etch,,DEMO-Etch-Temp-1,
+DEMO-Etch,,DEMO-Etch-Temp-2,
+DEMO-Etch,,DEMO-Etch-Air Pressure-1,
+DEMO-Etch,,DEMO-Etch-Air Pressure-2,
+DEMO-Kitting,,DEMO-Base-PN,DEMO-Base-PN
+DEMO-Kitting,,DEMO-Copper-PN,
+DEMO-Kitting,,DEMO-Base-SN,
+DEMO-Kitting,,DEMO-Copper-SN,
+ST-Reflow,,DEMO-Reflow-1,
+ST-Reflow,,DEMO-Reflow-2,
+ST-Kitting,,DEMO-Base-PN,
+ST-Kitting,,DEMO-Copper-PN,
+ST-Etch,,DEMO-Etch-S.G.,
+ST-Etch,,DEMO-Etch-Temp-1,
+ST-Etch,,DEMO-Etch-Temp-2,
+ST-Etch,,DEMO-Etch-Air Pressure-1,
+ST-Etch,,DEMO-Etch-Air Pressure-2,
+ST-AOI,,DEMO-AOI-Width,
+ST-AOI,,DEMO-AOI-Offset,

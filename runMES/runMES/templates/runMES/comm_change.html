@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <form id='comm_change_form'>
+      <h3>{{ load_title }}</h3>
+      <br><br>
+      {{ form.as_p }}
+      <input type='submit' value='Confirm'>
+      <br><br>
+      <div id='reply'></div>
+    </form>
+
+    <script>
+      $("#comm_change_form").submit(function(e){
+        e.preventDefault()
+        $.ajax({
+          method: "POST",
+          data: $(this).serialize(),
+          success: function(ret){
+              $('#reply').html(ret);
+          }
+        });
+      });
+    </script>
+
+{% endblock %}

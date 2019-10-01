@@ -1,0 +1,71 @@
+<html>
+<form id="lot_dc_form" action='' method=''>
+  <h5>DC PLAN: {{ dc_plan }}</h5>
+{#  <h5>EQ: {{ eq }}</h5>#}
+{#  <h5>OP: {{ op }}</h5>#}
+  <br>
+  <label for='annotation'>Annotation: </label>
+  <input id='annotation' type='text' name='anno_field' value=''>
+  <br><br>
+
+  <table id="dt_list" class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th width="50%"><strong> ITEM NAME </strong></th>
+        <th width="50%"><strong> CATEGORY </strong></th>
+        <th width="50%"><strong> UNIT </strong></th>
+        <th width="50%"><strong> DATA TYPE </strong></th>
+        <th width="50%"><strong> DATA VALUE </strong></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {% for item in dcitem_set %}
+      <tr>
+        <td> <input type="text" tabindex="-1" name="item_name" value="{{ item.item_name }}" readonly></td>
+        <td> <input type="text" tabindex="-1" name="category" value="{{ item.category }}" readonly></td>
+        <td> <input type="text" tabindex="-1" name="unit" value="{{ item.unit }}" readonly></td>
+        <td> <input type="text" tabindex="-1" name="data_type" value="{{ item.data_type }}" readonly></td>
+{#        <td> <input id="val" name="val" value=""/></td>#}
+        {% if item.data_type == "B" %}
+{#             <td> <input type="checkbox" id="val" name="val" value=""required={{ required }}/></td>#}
+            <td><select name="val"><option value=True>Yes</option><option value=False>No</option></select></td>
+          {% elif item.data_type == 'I' %}
+            <td> <input type="number" pattern="\d+" id="val" name="val" value=""required={{ required }}/></td>
+          {% elif item.data_type == 'F' %}
+            <td> <input type="text" pattern="[-+]?[0-9]+([.][0-9]+)?|''" id="val" name="val" value=""required={{ required }}/></td>
+          {% else %}
+            <td> <input type="text" name="val" value="" required={{ required }}/></td>
+          {% endif %}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+
+
+  <input type="hidden" name="dc_plan" value= "{{ dc_plan }}">
+  <input type="hidden" name="lot" value= "{{ lot }}">
+  <input type="hidden" name="eq" value= "{{ eq }}">
+  <input type="hidden" name="op" value= "{{ op }}">
+  <br>
+  <input id="dc_submit" type='submit' value='Send'>
+  <br><br>
+  <p>Reply: </p>
+  <div id='reply'></div>
+</form>
+
+<script>
+  $("#lot_dc_form").submit(function (e) {
+    e.preventDefault()
+    $.ajax({
+      method: "POST",
+      url: 'lot_dc/',
+      data: $(this).serialize(),
+      success: function (ret) {
+        $('#reply').html(ret);
+      }
+    });
+  });
+</script>
+</html>

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<link rel="stylesheet" type="text/css"  href="{% static 'css/minimal-table.css' %}">
+
+<h3>Product Process List</h3>
+
+<table>
+    <tr>
+      <td><strong> PRODUCT </strong></td>
+      <td><strong> PROCESS    </strong></td>
+    </tr>
+
+
+    {% for l in product_process_flow_list %}
+        <tr>
+            <td> {{ l.product }} </td>
+            <td> <a href='{{ l.get_absolute_url }}' >{{ l.process}} </td>
+        </tr>
+    {% endfor %}
+
+</table>
+
+{% endblock %}

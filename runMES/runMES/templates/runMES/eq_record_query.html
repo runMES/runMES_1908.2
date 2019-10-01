@@ -1,0 +1,24 @@
+<form id='comm_clean_form'>
+  <h3>{{ load_title }}</h3>
+  <br><br>
+  {{ form.as_p }}
+  <input type='submit' value='Confirm'>
+  <input type="hidden" name="eq" value= "{{ eq }}">
+  <input type="hidden" name="op" value= "{{ op }}">
+  <br><br>
+  <span id='reply'></span>
+</form>
+
+<script>
+  $("#comm_clean_form").submit(function(e){
+    e.preventDefault()
+    $.ajax({
+      method: "POST",
+      url: '/eq/eq_record_query/',
+      data: $(this).serialize(),
+      success: function(ret){
+          $('#reply').html(ret);
+      }
+    });
+  });
+</script>

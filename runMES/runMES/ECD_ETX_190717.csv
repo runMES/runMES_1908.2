@@ -1,0 +1,47 @@
+ECD,ETX,Category
+D01,Data Collection Not Exist,DC
+D02,DC Item Not Exist,DC
+E01,EQ State Mismatch,EQ
+E02,EQ Not Match Lot Process Step,EQ
+E03,EQ in Hold,EQ
+E04,Require Step Check-EQ Record,EQ
+E05,EQ Not Exist,EQ
+E06,EQ Record Not Exist,EQ
+E07,Not Lot Available for EQ,EQ
+F01,Form Input Error,Form
+I01,Input Data Empty,Input
+L01,Lot State mismatch,Lot
+L02,Lot ID Duplicated,Lot
+L03,Lot In Hold,Lot
+L05,Lot Qty Error,Lot
+L06,Product Mismatch,Lot
+L07,Process Step Mismatch,Lot
+L08,Next Operation Mismatch,Lot
+L09,Lot Not In EQ,Lot
+L10,Lot Grade Mismatch,LOT
+L11,No EQ Available,Lot
+L12,Lot Not Exist,Lot
+L13,State No Change,Lot
+L14,Lot Qty Error,Lot
+L15,Lot ID Exceed Max Length, Please Merge to a shorter Lot ID,Lot
+L16,Lot ID Illegal,Lot
+L17,New Lot Duplication,Lot
+L18,Lot Start ID Exceed Max Length,Lot
+L19,Lot Batch Size Exceed,Lot
+L20,Lot Record not Exist,Lot
+L21,Lot No Break OP,Lot
+L22,Lot Priority No Change
+M01,Email Format Error,Mail
+O01,ObjDoesNotExist,Object
+OS1,Out Of Spec,DC
+P01,Product Not Exist,Product
+S01,Process Step Not Exist,Step
+U01,Unknown Error,System
+W01,Work Order Not Exist,Work Order
+W02,Qty Left Not Enough,Work Order
+W03,Work Order Duplicated,Work Order
+W04,Work Order Qty Error,Work Order
+W05,Work Order Priority Error,Work Order
+W06,Work Order Lot Type Error,Work Order
+W07,Work Order Target DateTime Error,Work Order
+

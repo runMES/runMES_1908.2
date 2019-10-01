@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<script>
+  $(document).ready(function(){
+    var ajax_table=$('#dt_list').DataTable({
+      "paging":   true,
+      "ordering": true,
+      "info":     false,
+      'order': [[ 0, 'asc' ]],
+      'ajax': {
+        url: '/CFM/cfm_ajax/',
+        dataSrc: ''
+      },
+      'columns':[
+        {#{data: "Name"},#}
+        {#{data: "State"},#}
+        {#{data: "Hold"},#}
+        {#{data: "Last Recipe"},#}
+        {#{data: "Last Product"},#}
+        {#{data: "Lot List"}#}
+
+        {"data": "0"},
+        {"data": "1"},
+        {"data": "2"},
+        {"data": "3"},
+        {"data": "4"},
+        {"data": "5"}
+      ]
+    });
+    setInterval(function(){
+      ajax_table.ajax.reload();
+    },5000);
+  });
+</script>
+ <form id="ajax_eq_list" action="" method="get">
+  <div>
+    <h3>{{ load_title }}</h3>
+    <h4>EQ States:</h4>
+    {% for s in eq_states %}
+      {{ s.name }} - {{ s.val }} &nbsp
+    {% endfor %}
+  </div>
+  <table id="dt_list" class="table table-striped table-bordered compact" style="width:100%; margin:0">
+    <thead>
+      <tr>
+        <th>
+          <a class="column_sort" id="0">ID</a>
+        </th>
+        <th>
+          <a class="column_sort" id="1">State</a>
+        </th>
+        <th>
+          <a class="column_sort" id="2">Hold</a>
+        </th>
+        <th>
+          <a class="column_sort" id="3">Last Recipe</a>
+        </th>
+        <th>
+          <a class="column_sort" id="4">Last Product</a>
+        </th>
+        <th>
+          <a class="column_sort" id="5">Lot List</a>
+        </th>
+      </tr>
+    </thead>
+  </table>
+ </form>
+
+
+
+{% endblock %}

@@ -1,0 +1,5 @@
+name,description,recipe,instruction,eq_group,category,step_check,dcplan,breaking,binning
+DEMO-AOI,,DEMO-AOI,,DEMO-AOI,DEMO-AOI,,DEMO-AOI,,
+DEMO-Reflow,,DEMO-Reflow,,DEMO-Reflow,DEMO-Reflow,,DEMO-Reflow,,
+DEMO-Etch,,DEMO-Etch,,DEMO-Etch,DEMO-Etch,DEMO-Etch,,,
+DEMO-Kitting,,DEMO-Kitting,,DEMO-Kitting,DEMO-Kitting,,DEMO-Kitting,,

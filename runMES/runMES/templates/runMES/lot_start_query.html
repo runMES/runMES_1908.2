@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h3>{{ title }}</h3>
+
+    <form id="workorder_lot_start_form" action='' method=''>
+        <label for='workorder'>Work Order: </label>
+        <input id='workorder' type='text' name='workorder' value=''>
+        &nbsp
+        <input type='submit' value='Query'>
+        <p> &nbsp; </p>
+        <div id='start_lot'></div>
+    </form>
+
+    <script>
+        $("#workorder_lot_start_form").submit(function(e){
+            e.preventDefault()
+            $.ajax({
+                method: "POST",
+                data: $(this).serialize(),
+                success: function (e) {
+                    $('#start_lot').html(e);
+                }
+            });
+        });
+    </script>
+
+{% endblock %}

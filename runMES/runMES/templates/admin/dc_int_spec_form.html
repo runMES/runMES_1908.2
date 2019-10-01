@@ -1,0 +1,73 @@
+<html>
+<form id="dc_spec_int_form" action='' method='POST'>
+  {% csrf_token %}
+
+  <table width="380">
+    <tr>
+      <td><strong> Unit: </strong></td>
+      <td><input type="text" name="unit" value="{{ item.dcitem_category.unit }}" readonly></td>
+    </tr>
+    <tr>
+      <td><strong> Data Type: </strong></td>
+      <td><input type="text" name="data_type" value={{ item.dcitem_category.data_type }} readonly></td>
+    </tr>
+    <tr>
+      <td><strong> Integer Spec Target: </strong></td>
+      <td><input type="number" pattern="\d+" name="target" value={{ target }}></td>
+    </tr>
+    <tr>
+      <td><strong> Integer Spec High: </strong></td>
+      <td><input type="number" pattern="\d+" name="spec_high" required value={{ spec_high }}></td>
+    </tr>
+    <tr>
+      <td><strong> Integer Spec Low: </strong></td>
+      <td><input type="number" pattern="\d+" name="spec_low" required value={{ spec_low }}></td>
+    </tr>
+    <tr>
+      <td><strong> Screen High: </strong></td>
+      <td><input type="number" pattern="\d+" name="screen_high"  value={{ screen_high }}></td>
+    </tr>
+    <tr>
+      <td><strong> Screen Low: </strong></td>
+      <td><input type="number" pattern="\d+" name="screen_low"  value={{ screen_low }}></td>
+    </tr>
+  </table>
+  <br>
+  <input type="checkbox" name="oos_hold_lot" value={{ oos_hold_lot }} {% if oos_hold_lot %}checked{% endif %}> OOS Hold Lot &nbsp&nbsp
+  <input type="checkbox" name="oos_hold_eq" value={{ oos_hold_eq }} {% if oos_hold_eq %}checked{% endif %}> OOS Hold EQ &nbsp&nbsp
+  <input type="checkbox" name="oos_send_mail" value={{ oos_send_mail }} {% if oos_send_mail %}checked{% endif %}> OOS Send Mail<br><br>
+  <input type="checkbox" name="active" value= {{ active }} {% if active %}checked{% endif %}>Active &nbsp&nbsp
+  <input type="checkbox" name="freeze" value= {{ freeze }} {% if freeze %}checked{% endif %} {% if freeze %}onclick="return false"{% endif %}>Freeze <br>
+
+  <input type="hidden" name="change" value= "{{ change }}">
+  <input type="hidden" name="spec_name" value= "{{ spec_name }}">
+  <input type="hidden" name="item_key" value= {{ item_key }}>
+
+  <br>
+  <input id="save_btn" type='submit' value='Save' style="background-color: black">
+{#  {% if change and not freeze %}#}
+{#  <input id="delete_btn" type='submit' value='Delete' style="background-color:brown;float:right">#}
+{#  {% endif %}#}
+  <br><br>
+  <p>Reply: </p>
+  <div id='reply'></div>
+</form>
+
+<script type="text/javascript">
+  (function($){
+    $(document).ready(function() {
+      $("#dc_spec_int_form").submit(function (e) {
+        e.preventDefault();
+        $.ajax({
+          method: "POST",
+          url: '',
+          data: $(this).serialize(),
+          success: function (e) {
+            $('#reply').html(e);
+          }
+        });
+      });
+    });
+  })(django.jQuery);
+</script>
+</html>

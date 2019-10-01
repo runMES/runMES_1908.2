@@ -1,0 +1,51 @@
+Copyright(c)2019, StepTech Systems
+Last update: 2019/09/03
+by Joshua Chin
+
+
+runMES is an open source and free Manufacturing Exection System it is developed by Joshua Chin at StepTech Systems.
+
+Configuration:
+The tested operation systems for runMES is Ubuntu 18.04
+
+Required systems for runMES installation: 
+python3, pip, mosquitto, postgres, pgadmin3 and redis-server
+
+Installation briefing (please refer to operation manual for detail):
+assume you will start from a clean database -
+1. create a virtual env under your dest directory and activate virtual enviroment
+- > python3 -m venv runMES_1908
+- > cd runMES_1908
+- > source bin/activate
+2. chmod for all shell scripts
+- > cd runMES
+- > chmod +x *.sh.
+3. install pip scripts
+- > ./install_pip.sh
+4. update uwsgi.ini (check if different)
+- basedir=/home/runmes/runMES_1908
+5. create runMES database schema
+- remove runMES/runMES/migrations/0001_initial.py (keep __init__.py)
+->python3 manage.py  makemigrations
+->python3 manage.py migrate
+6. create super user
+->python3 manage.py createsuperuser
+7. create required groups (Admin, Manager, Super, OP)
+->./initial_groups.sh. (or you can create from http://youIP:8000/admin. create the runMES required groups (Admin, Manager, Super, OP)
+8. update start_runMES.sh (update LF), sometime it will change LF during file transfer between systems
+- use vi
+- set ff=unix
+- save file
+9. startup system
+-> ./start_runMES.sh
+10. Assign superuser groups privileges (if you will need the superuser to do something before create other users)
+11. new fab modeling import GUI (need Admin group privilege), or modeling in http://youIP:8000/admin
+- create your import files for all modeling, example files in runMES/csv_samples
+- > http://yourIP:8000/modeling
+- > import files
+
+for Production enviroment:
+1. RAID system is highly recommended
+2. An database replication for report application
+3. Back up database every day
+4. A testing database to verify backup

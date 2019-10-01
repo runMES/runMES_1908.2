@@ -1,0 +1,96 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Aug 25 01:04:24 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 7.0.2 (clang-700.1.81) on 15 May 2019 10:25:14
+os: Darwin-18.7.0 Darwin Kernel Version 18.7.0: Thu Jun 20 18:42:21 PDT 2019; root:xnu-4903.270.47~4/RELEASE_X86_64
+nodename: joshuaMBP
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 12
+current working directory: /Users/jc/Dropbox/workspace/runMES/runMES_1908rc1p5/runMES
+writing pidfile to /Users/jc/Dropbox/workspace/runMES/runMES_1908rc1p5/uwsgi-master.pid
+detected binary path: /Users/jc/Dropbox/workspace/runMES/runMES_1908rc1p5/bin/uwsgi
+chdir() to /Users/jc/Dropbox/workspace/runMES/runMES_1908rc1p5/runMES/
+your processes number limit is 1418
+your memory page size is 4096 bytes
+detected max file descriptor number: 10240
+building mime-types dictionary from file /etc/apache2/mime.types...1003 entry found
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:58601 (port auto-assigned) fd 3
+Python version: 3.6.4 (v3.6.4:d48ecebad5, Dec 18 2017, 21:07:28)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+Set PythonHome to /Users/jc/Dropbox/workspace/runMES/runMES_1908rc1p5/
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7fec0c000e00
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+[uwsgi-cron] command "{ sleep 66 && kill -HUP $(cat /Users/jc/Dropbox/workspace/runMES/runMES_1908rc1p5/uwsgi-master.pid) && ls -tp /Users/jc/Dropbox/workspace/runMES/runMES_1908rc1p5/runMES/uwsgi-* | grep -v '/$' | tail -n +7  | xargs -d '\n' -r rm --; } &" registered as cron task
+mapped 1117336 bytes (1091 KB) for 10 cores
+*** Operational MODE: preforking ***
+Traceback (most recent call last):
+  File "./runMES/wsgi.py", line 12, in <module>
+    from django.core.wsgi import get_wsgi_application
+  File "/Users/jc/Dropbox/workspace/runMES/runMES_1908rc1p5/lib/python3.6/site-packages/django/core/wsgi.py", line 2, in <module>
+    from django.core.handlers.wsgi import WSGIHandler
+  File "/Users/jc/Dropbox/workspace/runMES/runMES_1908rc1p5/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 8, in <module>
+    from django.core.handlers import base
+  File "/Users/jc/Dropbox/workspace/runMES/runMES_1908rc1p5/lib/python3.6/site-packages/django/core/handlers/base.py", line 8, in <module>
+    from django.urls import get_resolver, set_urlconf
+  File "/Users/jc/Dropbox/workspace/runMES/runMES_1908rc1p5/lib/python3.6/site-packages/django/urls/__init__.py", line 1, in <module>
+    from .base import (
+  File "/Users/jc/Dropbox/workspace/runMES/runMES_1908rc1p5/lib/python3.6/site-packages/django/urls/base.py", line 8, in <module>
+    from .exceptions import NoReverseMatch, Resolver404
+  File "/Users/jc/Dropbox/workspace/runMES/runMES_1908rc1p5/lib/python3.6/site-packages/django/urls/exceptions.py", line 1, in <module>
+    from django.http import Http404
+  File "/Users/jc/Dropbox/workspace/runMES/runMES_1908rc1p5/lib/python3.6/site-packages/django/http/__init__.py", line 5, in <module>
+    from django.http.response import (
+  File "/Users/jc/Dropbox/workspace/runMES/runMES_1908rc1p5/lib/python3.6/site-packages/django/http/response.py", line 15, in <module>
+    from django.core.serializers.json import DjangoJSONEncoder
+  File "/Users/jc/Dropbox/workspace/runMES/runMES_1908rc1p5/lib/python3.6/site-packages/django/core/serializers/__init__.py", line 23, in <module>
+    from django.core.serializers.base import SerializerDoesNotExist
+  File "/Users/jc/Dropbox/workspace/runMES/runMES_1908rc1p5/lib/python3.6/site-packages/django/core/serializers/base.py", line 7, in <module>
+    from django.db import models
+  File "/Users/jc/Dropbox/workspace/runMES/runMES_1908rc1p5/lib/python3.6/site-packages/django/db/models/__init__.py", line 3, in <module>
+    from django.db.models.aggregates import *  # NOQA
+  File "/Users/jc/Dropbox/workspace/runMES/runMES_1908rc1p5/lib/python3.6/site-packages/django/db/models/aggregates.py", line 7, in <module>
+    from django.db.models.functions.mixins import (
+  File "/Users/jc/Dropbox/workspace/runMES/runMES_1908rc1p5/lib/python3.6/site-packages/django/db/models/functions/__init__.py", line 12, in <module>
+    from .text import (
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 951, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 894, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1157, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1129, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1241, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 82, in _path_stat
+KeyboardInterrupt
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 61393)
+spawned uWSGI worker 1 (pid: 61395, cores: 1)
+spawned uWSGI worker 2 (pid: 61396, cores: 1)
+spawned uWSGI worker 3 (pid: 61397, cores: 1)
+spawned uWSGI worker 4 (pid: 61398, cores: 1)
+spawned uWSGI worker 5 (pid: 61399, cores: 1)
+spawned uWSGI worker 6 (pid: 61400, cores: 1)
+spawned uWSGI worker 7 (pid: 61401, cores: 1)
+spawned uWSGI worker 8 (pid: 61402, cores: 1)
+spawned uWSGI worker 9 (pid: 61403, cores: 1)
+spawned uWSGI worker 10 (pid: 61404, cores: 1)
+spawned uWSGI http 1 (pid: 61405)
+subprocess 61394 exited with code 0
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 61405)
+worker 10 buried after 1 seconds
+worker 9 buried after 1 seconds
+worker 8 buried after 1 seconds
+worker 7 buried after 1 seconds
+worker 6 buried after 1 seconds
+worker 5 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.

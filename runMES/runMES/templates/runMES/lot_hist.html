@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h3>Lot History</h3>
+
+    <form id="lot_hist_form" action='' method=''>
+
+        <label for='lotid'>Lot ID: </label>
+        <input id='lotid' type='text' name='lot_field' value=''>
+        <input class="btn btn-default btn-lg" type='submit' value='Query'>
+        <p>&nbsp</p>
+        <div id='lothist'></div>
+    </form>
+
+    <script>
+        $("#lot_hist_form").submit(function (e) {
+            e.preventDefault()
+            $.ajax({
+                method: "POST",
+                data: $(this).serialize(),
+                success: function (e) {
+                    $('#lothist').html(e);
+                }
+            });
+        });
+    </script>
+
+{% endblock %}

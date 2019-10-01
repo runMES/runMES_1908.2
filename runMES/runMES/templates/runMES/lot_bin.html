@@ -1,0 +1,52 @@
+<html>
+<form id="lot_bin_form" action='' method=''>
+  <h5>Lot Bin: {{ binning }}</h5>
+  <h5>Lot Qty: {{ lot_qty }}</h5>
+  <h5>OP: {{op}}</h5>
+  <br>
+  <label for='annotation'>Annotation: </label>
+  <input id='annotation' type='text' name='anno_field' value=''>
+  <br><br>
+  <table id="dt_list" class="table table-striped table-bordered compact" style="width:50%; margin:0">
+    <tr>
+      <td><strong> GRADE </strong></td>
+      <td><strong> DESCRIPTION </strong></td>
+      <td><strong> QTY </strong></td>
+    </tr>
+
+    {% for g in grade_set %}
+      <tr>
+        <td> <input type="text" name="grade" value="{{ g.grade }}" readonly></td>
+        <td> <input type="text" name="description" value="{{ g.description }}" readonly></td>
+        <td> <input id="qty" type="number" pattern="\d+" min="0" max="999999" name="qty" value=""/></td>
+      </tr>
+    {% endfor %}
+
+  </table>
+
+  <input type="hidden" name="lot_bin" value= "{{ binning }}">
+  <input type="hidden" name="lot" value= "{{ lot }}">
+  <input type="hidden" name="eq" value= "{{ eq }}">
+  <input type="hidden" name="lot_qty" value= "{{ lot_qty }}">
+
+  <br>
+  <input id="bin_submit" type='submit' value='Send'>
+  <br><br>
+  <p>Reply: </p>
+  <div id='reply'></div>
+</form>
+
+<script>
+  $("#lot_bin_form").submit(function (e) {
+    e.preventDefault()
+    $.ajax({
+      method: "POST",
+      url: 'lot_bin/',
+      data: $(this).serialize(),
+      success: function (ret) {
+        $('#reply').html(ret);
+      }
+    });
+  });
+</script>
+</html>

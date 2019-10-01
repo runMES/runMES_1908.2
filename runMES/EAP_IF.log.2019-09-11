@@ -1,0 +1,357 @@
+[2019-09-11 11:03:44,168] {'MQTT': 'mq_log_EAP_IF_srv', 'STATUS': 'active'}
+[2019-09-11 11:03:44,168] {'EAP_IF': 'start mq_log_EAP_srv'}
+[2019-09-11 11:03:44,169] {'EAP_IF': 'start step_in_srv'}
+[2019-09-11 11:03:44,170] {'EAP_IF': 'start step_out_srv'}
+[2019-09-11 11:03:44,170] {'EAP_IF': 'start dc_srv'}
+[2019-09-11 11:03:44,171] {'EAP_IF': 'start lot_break_srv'}
+[2019-09-11 11:03:44,171] {'EAP_IF': 'start lot_bin_srv'}
+[2019-09-11 11:03:44,172] {'EAP_IF': 'start eq_record_srv'}
+[2019-09-11 11:03:44,172] {'EAP_IF': 'start lot_record_srv'}
+[2019-09-11 11:03:44,173] {'EAP_IF': 'start qry_dcplan_item_srv'}
+[2019-09-11 11:03:44,174] {'EAP_IF': 'start qry_eq_record_srv'}
+[2019-09-11 11:03:44,174] {'EAP_IF': 'start qry_lot_record_srv'}
+[2019-09-11 11:03:44,175] {'EAP_IF': 'start qry_lot_srv'}
+[2019-09-11 11:03:44,176] {'EAP_IF': 'start qry_lot_bin_srv'}
+[2019-09-11 11:03:44,177] {'EAP_IF': 'start qry_eq_lot_srv'}
+[2019-09-11 11:03:44,178] {'EAP_IF': 'start qry_eq_product_lot_srv'}
+[2019-09-11 11:03:44,178] {'EAP_IF': 'start S1F1_srv'}
+[2019-09-11 11:03:44,179] {'EAP_IF': 'start alarm_srv'}
+[2019-09-11 11:18:32,418] invalid character in identifier (<unknown>, line 1)
+Traceback (most recent call last):
+  File "/Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/MQTT/mq_alarm_srv.py", line 48, in on_message
+    d=ast.literal_eval(payload)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/ast.py", line 48, in literal_eval
+    node_or_string = parse(node_or_string, mode='eval')
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/ast.py", line 35, in parse
+    return compile(source, filename, mode, PyCF_ONLY_AST)
+  File "<unknown>", line 1
+    {'TID_TXT':'EAP-001','RTN_TXT':'alarm_eq','ALARM_ID_TXT':'ALARM-TEST-01','ALARM_MSG_TXT':'Alram Msg','SET_RESET_BIN':True,’SOURCE_TXT’:’EAP emulator','DEVICE_TIME_TXT':'','CATEGORY_TXT':'','ANNO_TXT':''}
+                                                                                                                                         ^
+SyntaxError: invalid character in identifier
+[2019-09-11 11:18:32,422] {'MQTT': 'mq_alarm_srv', 'STATUS': 'on_message', 'ERR': SyntaxError('invalid character in identifier', ('<unknown>', 1, 134, "{'TID_TXT':'EAP-001','RTN_TXT':'alarm_eq','ALARM_ID_TXT':'ALARM-TEST-01','ALARM_MSG_TXT':'Alram Msg','SET_RESET_BIN':True,’SOURCE_TXT’:’EAP emulator','DEVICE_TIME_TXT':'','CATEGORY_TXT':'','ANNO_TXT':''}"))}
+[2019-09-11 11:33:53,489] {'MQTT': 'mq_log_EAP_IF_srv', 'STATUS': 'active'}
+[2019-09-11 11:33:53,489] {'EAP_IF': 'start mq_log_EAP_srv'}
+[2019-09-11 11:33:53,489] {'EAP_IF': 'start step_in_srv'}
+[2019-09-11 11:33:53,490] {'EAP_IF': 'start step_out_srv'}
+[2019-09-11 11:33:53,491] {'EAP_IF': 'start dc_srv'}
+[2019-09-11 11:33:53,492] {'EAP_IF': 'start lot_break_srv'}
+[2019-09-11 11:33:53,492] {'EAP_IF': 'start lot_bin_srv'}
+[2019-09-11 11:33:53,493] {'EAP_IF': 'start eq_record_srv'}
+[2019-09-11 11:33:53,493] {'EAP_IF': 'start lot_record_srv'}
+[2019-09-11 11:33:53,495] {'EAP_IF': 'start qry_dcplan_item_srv'}
+[2019-09-11 11:33:53,496] {'EAP_IF': 'start qry_eq_record_srv'}
+[2019-09-11 11:33:53,496] {'EAP_IF': 'start qry_lot_record_srv'}
+[2019-09-11 11:33:53,497] {'EAP_IF': 'start qry_lot_srv'}
+[2019-09-11 11:33:53,497] {'EAP_IF': 'start qry_lot_bin_srv'}
+[2019-09-11 11:33:53,498] {'EAP_IF': 'start qry_eq_lot_srv'}
+[2019-09-11 11:33:53,498] {'EAP_IF': 'start qry_eq_product_lot_srv'}
+[2019-09-11 11:33:53,499] {'EAP_IF': 'start S1F1_srv'}
+[2019-09-11 11:33:53,500] {'EAP_IF': 'start alarm_srv'}
+[2019-09-11 11:33:53,557] {'MQTT': 'mq_S1F1_srv', 'STATUS': 'active'}
+[2019-09-11 11:33:53,611] {'MQTT': 'mq_alarm_srv', 'STATUS': 'active'}
+[2019-09-11 11:34:26,696] invalid character in identifier (<unknown>, line 1)
+Traceback (most recent call last):
+  File "/Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/MQTT/mq_alarm_srv.py", line 48, in on_message
+    d=ast.literal_eval(payload)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/ast.py", line 48, in literal_eval
+    node_or_string = parse(node_or_string, mode='eval')
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/ast.py", line 35, in parse
+    return compile(source, filename, mode, PyCF_ONLY_AST)
+  File "<unknown>", line 1
+    {'TID_TXT':'EAP-001','RTN_TXT':'alarm_eq','ALARM_ID_TXT':'ALARM-TEST-01','ALARM_MSG_TXT':'Alram Msg','SET_CLEAR_TXT':True,’SOURCE_TXT’:’EAP emulator','DEVICE_TIME_TXT':'','CATEGORY_TXT':'','ANNO_TXT':''}
+                                                                                                                                         ^
+SyntaxError: invalid character in identifier
+[2019-09-11 11:34:26,697] {'MQTT': 'mq_alarm_srv', 'STATUS': 'on_message', 'ERR': SyntaxError('invalid character in identifier', ('<unknown>', 1, 134, "{'TID_TXT':'EAP-001','RTN_TXT':'alarm_eq','ALARM_ID_TXT':'ALARM-TEST-01','ALARM_MSG_TXT':'Alram Msg','SET_CLEAR_TXT':True,’SOURCE_TXT’:’EAP emulator','DEVICE_TIME_TXT':'','CATEGORY_TXT':'','ANNO_TXT':''}"))}
+[2019-09-11 12:13:24,230] invalid character in identifier (<unknown>, line 1)
+Traceback (most recent call last):
+  File "/Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/MQTT/mq_alarm_srv.py", line 48, in on_message
+    d=ast.literal_eval(payload)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/ast.py", line 48, in literal_eval
+    node_or_string = parse(node_or_string, mode='eval')
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/ast.py", line 35, in parse
+    return compile(source, filename, mode, PyCF_ONLY_AST)
+  File "<unknown>", line 1
+    {'TID_TXT':'EAP-001','RTN_TXT':'alarm_eq','ALARM_ID_TXT':'ALARM-TEST-01','ALARM_MSG_TXT':'Alram Msg','SET_CLEAR_TXT':'1',’SOURCE_TXT’:’EAP emulator','DEVICE_TIME_TXT':'','CATEGORY_TXT':'','ANNO_TXT':''}
+                                                                                                                                        ^
+SyntaxError: invalid character in identifier
+[2019-09-11 12:13:24,231] {'MQTT': 'mq_alarm_srv', 'STATUS': 'on_message', 'ERR': SyntaxError('invalid character in identifier', ('<unknown>', 1, 133, "{'TID_TXT':'EAP-001','RTN_TXT':'alarm_eq','ALARM_ID_TXT':'ALARM-TEST-01','ALARM_MSG_TXT':'Alram Msg','SET_CLEAR_TXT':'1',’SOURCE_TXT’:’EAP emulator','DEVICE_TIME_TXT':'','CATEGORY_TXT':'','ANNO_TXT':''}"))}
+[2019-09-11 12:19:13,123] {'MQTT': 'mq_log_EAP_IF_srv', 'STATUS': 'active'}
+[2019-09-11 12:19:13,123] {'EAP_IF': 'start mq_log_EAP_srv'}
+[2019-09-11 12:19:13,123] {'EAP_IF': 'start step_in_srv'}
+[2019-09-11 12:19:13,124] {'EAP_IF': 'start step_out_srv'}
+[2019-09-11 12:19:13,125] {'EAP_IF': 'start dc_srv'}
+[2019-09-11 12:19:13,125] {'EAP_IF': 'start lot_break_srv'}
+[2019-09-11 12:19:13,126] {'EAP_IF': 'start lot_bin_srv'}
+[2019-09-11 12:19:13,126] {'EAP_IF': 'start eq_record_srv'}
+[2019-09-11 12:19:13,127] {'EAP_IF': 'start lot_record_srv'}
+[2019-09-11 12:19:13,128] {'EAP_IF': 'start qry_dcplan_item_srv'}
+[2019-09-11 12:19:13,128] {'EAP_IF': 'start qry_eq_record_srv'}
+[2019-09-11 12:19:13,129] {'EAP_IF': 'start qry_lot_record_srv'}
+[2019-09-11 12:19:13,129] {'EAP_IF': 'start qry_lot_srv'}
+[2019-09-11 12:19:13,130] {'EAP_IF': 'start qry_lot_bin_srv'}
+[2019-09-11 12:19:13,130] {'EAP_IF': 'start qry_eq_lot_srv'}
+[2019-09-11 12:19:13,130] {'MQTT': 'mq_step_in_srv', 'STATUS': 'active'}
+[2019-09-11 12:19:13,131] {'EAP_IF': 'start qry_eq_product_lot_srv'}
+[2019-09-11 12:19:13,133] {'EAP_IF': 'start S1F1_srv'}
+[2019-09-11 12:19:13,135] {'EAP_IF': 'start alarm_srv'}
+[2019-09-11 12:19:13,187] {'MQTT': 'mq_qry_lot_srv', 'STATUS': 'active'}
+[2019-09-11 12:19:13,241] {'MQTT': 'mq_alarm_srv', 'STATUS': 'active'}
+[2019-09-11 12:19:19,943] invalid character in identifier (<unknown>, line 1)
+Traceback (most recent call last):
+  File "/Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/MQTT/mq_alarm_srv.py", line 48, in on_message
+    d=ast.literal_eval(payload)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/ast.py", line 48, in literal_eval
+    node_or_string = parse(node_or_string, mode='eval')
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/ast.py", line 35, in parse
+    return compile(source, filename, mode, PyCF_ONLY_AST)
+  File "<unknown>", line 1
+    {'TID_TXT':'EAP-001','RTN_TXT':'alarm_eq','ALARM_ID_TXT':'ALARM-TEST-01','ALARM_MSG_TXT':'Alram Msg','SET_CLEAR_TXT':'1',’SOURCE_TXT’:’EAP emulator','DEVICE_TIME_TXT':'','CATEGORY_TXT':'','ANNO_TXT':''}
+                                                                                                                                        ^
+SyntaxError: invalid character in identifier
+[2019-09-11 12:19:19,944] {'MQTT': 'mq_alarm_srv', 'STATUS': 'on_message', 'ERR': SyntaxError('invalid character in identifier', ('<unknown>', 1, 133, "{'TID_TXT':'EAP-001','RTN_TXT':'alarm_eq','ALARM_ID_TXT':'ALARM-TEST-01','ALARM_MSG_TXT':'Alram Msg','SET_CLEAR_TXT':'1',’SOURCE_TXT’:’EAP emulator','DEVICE_TIME_TXT':'','CATEGORY_TXT':'','ANNO_TXT':''}"))}
+[2019-09-11 12:31:00,523] invalid character in identifier (<unknown>, line 1)
+Traceback (most recent call last):
+  File "/Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/MQTT/mq_alarm_srv.py", line 48, in on_message
+    d=ast.literal_eval(payload)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/ast.py", line 48, in literal_eval
+    node_or_string = parse(node_or_string, mode='eval')
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/ast.py", line 35, in parse
+    return compile(source, filename, mode, PyCF_ONLY_AST)
+  File "<unknown>", line 1
+    {'TID_TXT':'EAP-001','RTN_TXT':'alarm_eq','ALARM_ID_TXT':'ALARM-TEST-01','ALARM_MSG_TXT':'Alram Msg','SET_CLEAR_TXT':'1',’SOURCE_TXT’:’EAP emulator','DEVICE_TIME_TXT':'','CATEGORY_TXT':'','ANNO_TXT':''}
+                                                                                                                                        ^
+SyntaxError: invalid character in identifier
+[2019-09-11 12:31:00,524] {'MQTT': 'mq_alarm_srv', 'STATUS': 'on_message', 'ERR': SyntaxError('invalid character in identifier', ('<unknown>', 1, 133, "{'TID_TXT':'EAP-001','RTN_TXT':'alarm_eq','ALARM_ID_TXT':'ALARM-TEST-01','ALARM_MSG_TXT':'Alram Msg','SET_CLEAR_TXT':'1',’SOURCE_TXT’:’EAP emulator','DEVICE_TIME_TXT':'','CATEGORY_TXT':'','ANNO_TXT':''}"))}
+[2019-09-11 12:32:07,586] 'ALARM_CODE_TXT'
+Traceback (most recent call last):
+  File "/Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/MQTT/mq_alarm_srv.py", line 54, in on_message
+    alarm_id=d['ALARM_CODE_TXT']
+KeyError: 'ALARM_CODE_TXT'
+[2019-09-11 12:32:07,586] {'MQTT': 'mq_alarm_srv', 'STATUS': 'on_message', 'ERR': KeyError('ALARM_CODE_TXT',)}
+[2019-09-11 12:33:26,592] {'MQTT': 'mq_log_EAP_IF_srv', 'STATUS': 'active'}
+[2019-09-11 12:33:26,593] {'EAP_IF': 'start mq_log_EAP_srv'}
+[2019-09-11 12:33:26,593] {'EAP_IF': 'start step_in_srv'}
+[2019-09-11 12:33:26,593] {'EAP_IF': 'start step_out_srv'}
+[2019-09-11 12:33:26,594] {'EAP_IF': 'start dc_srv'}
+[2019-09-11 12:33:26,595] {'EAP_IF': 'start lot_break_srv'}
+[2019-09-11 12:33:26,595] {'EAP_IF': 'start lot_bin_srv'}
+[2019-09-11 12:33:26,597] {'EAP_IF': 'start eq_record_srv'}
+[2019-09-11 12:33:26,597] {'EAP_IF': 'start lot_record_srv'}
+[2019-09-11 12:33:26,598] {'EAP_IF': 'start qry_dcplan_item_srv'}
+[2019-09-11 12:33:26,598] {'EAP_IF': 'start qry_eq_record_srv'}
+[2019-09-11 12:33:26,598] {'EAP_IF': 'start qry_lot_record_srv'}
+[2019-09-11 12:33:26,599] {'EAP_IF': 'start qry_lot_srv'}
+[2019-09-11 12:33:26,599] {'EAP_IF': 'start qry_lot_bin_srv'}
+[2019-09-11 12:33:26,600] {'EAP_IF': 'start qry_eq_lot_srv'}
+[2019-09-11 12:33:26,600] {'EAP_IF': 'start qry_eq_product_lot_srv'}
+[2019-09-11 12:33:26,600] {'EAP_IF': 'start S1F1_srv'}
+[2019-09-11 12:33:26,601] {'EAP_IF': 'start alarm_srv'}
+[2019-09-11 12:34:00,791] {'MQTT': 'mq_log_EAP_IF_srv', 'STATUS': 'active'}
+[2019-09-11 12:34:00,792] {'EAP_IF': 'start mq_log_EAP_srv'}
+[2019-09-11 12:34:00,792] {'EAP_IF': 'start step_in_srv'}
+[2019-09-11 12:34:00,793] {'EAP_IF': 'start step_out_srv'}
+[2019-09-11 12:34:00,793] {'EAP_IF': 'start dc_srv'}
+[2019-09-11 12:34:00,794] {'EAP_IF': 'start lot_break_srv'}
+[2019-09-11 12:34:00,794] {'EAP_IF': 'start lot_bin_srv'}
+[2019-09-11 12:34:00,795] {'EAP_IF': 'start eq_record_srv'}
+[2019-09-11 12:34:00,796] {'EAP_IF': 'start lot_record_srv'}
+[2019-09-11 12:34:00,797] {'EAP_IF': 'start qry_dcplan_item_srv'}
+[2019-09-11 12:34:00,797] {'EAP_IF': 'start qry_eq_record_srv'}
+[2019-09-11 12:34:00,799] {'EAP_IF': 'start qry_lot_record_srv'}
+[2019-09-11 12:34:00,800] {'EAP_IF': 'start qry_lot_srv'}
+[2019-09-11 12:34:00,801] {'EAP_IF': 'start qry_lot_bin_srv'}
+[2019-09-11 12:34:00,801] {'EAP_IF': 'start qry_eq_lot_srv'}
+[2019-09-11 12:34:00,802] {'EAP_IF': 'start qry_eq_product_lot_srv'}
+[2019-09-11 12:34:00,803] {'EAP_IF': 'start S1F1_srv'}
+[2019-09-11 12:34:00,804] {'EAP_IF': 'start alarm_srv'}
+[2019-09-11 12:34:00,807] {'MQTT': 'mq_qry_eq_record_srv', 'STATUS': 'active'}
+[2019-09-11 12:34:00,862] {'MQTT': 'mq_step_in_srv', 'STATUS': 'active'}
+[2019-09-11 12:34:00,916] {'MQTT': 'mq_qry_lot_bin_srv', 'STATUS': 'active'}
+[2019-09-11 12:34:00,967] {'MQTT': 'mq_alarm_srv', 'STATUS': 'active'}
+[2019-09-11 12:34:01,069] {'MQTT': 'mq_S1F1_srv', 'STATUS': 'active'}
+[2019-09-11 12:34:52,248] {'MQTT': 'mq_log_EAP_IF_srv', 'STATUS': 'active'}
+[2019-09-11 12:34:52,248] {'EAP_IF': 'start mq_log_EAP_srv'}
+[2019-09-11 12:34:52,248] {'EAP_IF': 'start step_in_srv'}
+[2019-09-11 12:34:52,249] {'EAP_IF': 'start step_out_srv'}
+[2019-09-11 12:34:52,250] {'EAP_IF': 'start dc_srv'}
+[2019-09-11 12:34:52,251] {'EAP_IF': 'start lot_break_srv'}
+[2019-09-11 12:34:52,253] {'EAP_IF': 'start lot_bin_srv'}
+[2019-09-11 12:34:52,254] {'EAP_IF': 'start eq_record_srv'}
+[2019-09-11 12:34:52,254] {'EAP_IF': 'start lot_record_srv'}
+[2019-09-11 12:34:52,255] {'EAP_IF': 'start qry_dcplan_item_srv'}
+[2019-09-11 12:34:52,255] {'EAP_IF': 'start qry_eq_record_srv'}
+[2019-09-11 12:34:52,256] {'EAP_IF': 'start qry_lot_record_srv'}
+[2019-09-11 12:34:52,257] {'MQTT': 'mq_step_out_srv', 'STATUS': 'active'}
+[2019-09-11 12:34:52,257] {'EAP_IF': 'start qry_lot_srv'}
+[2019-09-11 12:34:52,259] {'EAP_IF': 'start qry_lot_bin_srv'}
+[2019-09-11 12:34:52,261] {'EAP_IF': 'start qry_eq_lot_srv'}
+[2019-09-11 12:34:52,263] {'EAP_IF': 'start qry_eq_product_lot_srv'}
+[2019-09-11 12:34:52,264] {'EAP_IF': 'start S1F1_srv'}
+[2019-09-11 12:34:52,267] {'EAP_IF': 'start alarm_srv'}
+[2019-09-11 12:34:52,268] {'MQTT': 'mq_qry_lot_bin_srv', 'STATUS': 'active'}
+[2019-09-11 12:34:52,321] {'MQTT': 'mq_qry_lot_srv', 'STATUS': 'active'}
+[2019-09-11 12:34:52,376] {'MQTT': 'mq_qry_product_lot_srv', 'STATUS': 'active'}
+[2019-09-11 12:34:52,431] {'MQTT': 'mq_alarm_srv', 'STATUS': 'active'}
+[2019-09-11 12:34:57,999] 'ALARM_CODE_TXT'
+Traceback (most recent call last):
+  File "/Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/MQTT/mq_alarm_srv.py", line 54, in on_message
+    alarm_id=d['ALARM_ID_TXT']
+KeyError: 'ALARM_CODE_TXT'
+[2019-09-11 12:34:58,000] {'MQTT': 'mq_alarm_srv', 'STATUS': 'on_message', 'ERR': KeyError('ALARM_CODE_TXT',)}
+[2019-09-11 12:36:07,777] {'MQTT': 'mq_log_EAP_IF_srv', 'STATUS': 'active'}
+[2019-09-11 12:36:07,777] {'EAP_IF': 'start mq_log_EAP_srv'}
+[2019-09-11 12:36:07,778] {'EAP_IF': 'start step_in_srv'}
+[2019-09-11 12:36:07,778] {'EAP_IF': 'start step_out_srv'}
+[2019-09-11 12:36:07,779] {'EAP_IF': 'start dc_srv'}
+[2019-09-11 12:36:07,780] {'EAP_IF': 'start lot_break_srv'}
+[2019-09-11 12:36:07,780] {'EAP_IF': 'start lot_bin_srv'}
+[2019-09-11 12:36:07,782] {'EAP_IF': 'start eq_record_srv'}
+[2019-09-11 12:36:07,783] {'EAP_IF': 'start lot_record_srv'}
+[2019-09-11 12:36:07,784] {'EAP_IF': 'start qry_dcplan_item_srv'}
+[2019-09-11 12:36:07,785] {'EAP_IF': 'start qry_eq_record_srv'}
+[2019-09-11 12:36:07,785] {'EAP_IF': 'start qry_lot_record_srv'}
+[2019-09-11 12:36:07,786] {'EAP_IF': 'start qry_lot_srv'}
+[2019-09-11 12:36:07,788] {'MQTT': 'mq_step_in_srv', 'STATUS': 'active'}
+[2019-09-11 12:36:07,789] {'EAP_IF': 'start qry_lot_bin_srv'}
+[2019-09-11 12:36:07,791] {'EAP_IF': 'start qry_eq_lot_srv'}
+[2019-09-11 12:36:07,792] {'EAP_IF': 'start qry_eq_product_lot_srv'}
+[2019-09-11 12:36:07,795] {'EAP_IF': 'start S1F1_srv'}
+[2019-09-11 12:36:07,796] {'MQTT': 'mq_qry_lot_bin_srv', 'STATUS': 'active'}
+[2019-09-11 12:36:07,799] {'EAP_IF': 'start alarm_srv'}
+[2019-09-11 12:36:07,853] {'MQTT': 'mq_qry_lot_srv', 'STATUS': 'active'}
+[2019-09-11 12:36:07,895] {'MQTT': 'mq_qry_eq_record_srv', 'STATUS': 'active'}
+[2019-09-11 12:36:07,908] {'MQTT': 'mq_S1F1_srv', 'STATUS': 'active'}
+[2019-09-11 12:36:07,950] {'MQTT': 'mq_lot_record_srv', 'STATUS': 'active'}
+[2019-09-11 12:36:07,960] {'MQTT': 'mq_alarm_srv', 'STATUS': 'active'}
+[2019-09-11 12:39:23,024] 'ALARM_CODE_TXT'
+Traceback (most recent call last):
+  File "/Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/MQTT/mq_alarm_srv.py", line 54, in on_message
+    alarm_id=d['ALARM_ID_TXT']
+KeyError: 'ALARM_CODE_TXT'
+[2019-09-11 12:39:23,025] {'MQTT': 'mq_alarm_srv', 'STATUS': 'on_message', 'ERR': KeyError('ALARM_CODE_TXT',)}
+[2019-09-11 12:41:34,623] {'MQTT': 'mq_log_EAP_IF_srv', 'STATUS': 'active'}
+[2019-09-11 12:41:34,623] {'EAP_IF': 'start mq_log_EAP_srv'}
+[2019-09-11 12:41:34,624] {'EAP_IF': 'start step_in_srv'}
+[2019-09-11 12:41:34,625] {'EAP_IF': 'start step_out_srv'}
+[2019-09-11 12:41:34,625] {'EAP_IF': 'start dc_srv'}
+[2019-09-11 12:41:34,627] {'EAP_IF': 'start lot_break_srv'}
+[2019-09-11 12:41:34,627] {'EAP_IF': 'start lot_bin_srv'}
+[2019-09-11 12:41:34,627] {'EAP_IF': 'start eq_record_srv'}
+[2019-09-11 12:41:34,628] {'EAP_IF': 'start lot_record_srv'}
+[2019-09-11 12:41:34,628] {'EAP_IF': 'start qry_dcplan_item_srv'}
+[2019-09-11 12:41:34,629] {'EAP_IF': 'start qry_eq_record_srv'}
+[2019-09-11 12:41:34,630] {'EAP_IF': 'start qry_lot_record_srv'}
+[2019-09-11 12:41:34,632] {'EAP_IF': 'start qry_lot_srv'}
+[2019-09-11 12:41:34,633] {'MQTT': 'mq_step_out_srv', 'STATUS': 'active'}
+[2019-09-11 12:41:34,633] {'EAP_IF': 'start qry_lot_bin_srv'}
+[2019-09-11 12:41:34,635] {'EAP_IF': 'start qry_eq_lot_srv'}
+[2019-09-11 12:41:34,636] {'EAP_IF': 'start qry_eq_product_lot_srv'}
+[2019-09-11 12:41:34,638] {'EAP_IF': 'start S1F1_srv'}
+[2019-09-11 12:41:34,639] {'EAP_IF': 'start alarm_srv'}
+[2019-09-11 12:41:34,735] {'MQTT': 'mq_qry_eq_record_srv', 'STATUS': 'active'}
+[2019-09-11 12:41:34,791] {'MQTT': 'mq_qry_lot_srv', 'STATUS': 'active'}
+[2019-09-11 12:41:34,844] {'MQTT': 'mq_qry_lot_record_srv', 'STATUS': 'active'}
+[2019-09-11 12:41:34,895] {'MQTT': 'mq_qry_lot_srv', 'STATUS': 'active'}
+[2019-09-11 12:41:34,950] {'MQTT': 'mq_qry_product_lot_srv', 'STATUS': 'active'}
+[2019-09-11 12:41:35,002] {'MQTT': 'mq_S1F1_srv', 'STATUS': 'active'}
+[2019-09-11 12:41:35,055] {'MQTT': 'mq_alarm_srv', 'STATUS': 'active'}
+[2019-09-11 12:41:44,014] 'ALARM_CODE_TXT'
+Traceback (most recent call last):
+  File "/Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/MQTT/mq_alarm_srv.py", line 54, in on_message
+    alarm_id=d['ALARM_ID_TXT']
+KeyError: 'ALARM_CODE_TXT'
+[2019-09-11 12:41:44,015] {'MQTT': 'mq_alarm_srv', 'STATUS': 'on_message', 'ERR': KeyError('ALARM_CODE_TXT',)}
+[2019-09-11 12:44:02,942] {'MQTT': 'mq_log_EAP_IF_srv', 'STATUS': 'active'}
+[2019-09-11 12:44:02,942] {'EAP_IF': 'start mq_log_EAP_srv'}
+[2019-09-11 12:44:02,943] {'EAP_IF': 'start step_in_srv'}
+[2019-09-11 12:44:02,943] {'EAP_IF': 'start step_out_srv'}
+[2019-09-11 12:44:02,944] {'EAP_IF': 'start dc_srv'}
+[2019-09-11 12:44:02,945] {'EAP_IF': 'start lot_break_srv'}
+[2019-09-11 12:44:02,945] {'EAP_IF': 'start lot_bin_srv'}
+[2019-09-11 12:44:02,946] {'EAP_IF': 'start eq_record_srv'}
+[2019-09-11 12:44:02,947] {'EAP_IF': 'start lot_record_srv'}
+[2019-09-11 12:44:02,947] {'EAP_IF': 'start qry_dcplan_item_srv'}
+[2019-09-11 12:44:02,948] {'EAP_IF': 'start qry_eq_record_srv'}
+[2019-09-11 12:44:02,948] {'EAP_IF': 'start qry_lot_record_srv'}
+[2019-09-11 12:44:02,948] {'EAP_IF': 'start qry_lot_srv'}
+[2019-09-11 12:44:02,949] {'EAP_IF': 'start qry_lot_bin_srv'}
+[2019-09-11 12:44:02,949] {'EAP_IF': 'start qry_eq_lot_srv'}
+[2019-09-11 12:44:02,950] {'EAP_IF': 'start qry_eq_product_lot_srv'}
+[2019-09-11 12:44:02,952] {'EAP_IF': 'start S1F1_srv'}
+[2019-09-11 12:44:02,954] {'EAP_IF': 'start alarm_srv'}
+[2019-09-11 12:44:02,956] {'MQTT': 'mq_qry_lot_record_srv', 'STATUS': 'active'}
+[2019-09-11 12:44:03,063] {'MQTT': 'mq_lot_record_srv', 'STATUS': 'active'}
+[2019-09-11 12:44:03,114] {'MQTT': 'mq_qry_product_lot_srv', 'STATUS': 'active'}
+[2019-09-11 12:44:03,169] {'MQTT': 'mq_alarm_srv', 'STATUS': 'active'}
+[2019-09-11 12:44:08,891] 'ALARM_CODE_TXT'
+Traceback (most recent call last):
+  File "/Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/MQTT/mq_alarm_srv.py", line 54, in on_message
+    alarm_id=d['ALARM_ID_TXT']
+KeyError: 'ALARM_CODE_TXT'
+[2019-09-11 12:44:08,892] {'MQTT': 'mq_alarm_srv', 'STATUS': 'on_message', 'ERR': KeyError('ALARM_CODE_TXT',)}
+[2019-09-11 12:44:55,603] {'MQTT': 'mq_log_EAP_IF_srv', 'STATUS': 'active'}
+[2019-09-11 12:44:55,603] {'EAP_IF': 'start mq_log_EAP_srv'}
+[2019-09-11 12:44:55,604] {'EAP_IF': 'start step_in_srv'}
+[2019-09-11 12:44:55,604] {'EAP_IF': 'start step_out_srv'}
+[2019-09-11 12:44:55,605] {'EAP_IF': 'start dc_srv'}
+[2019-09-11 12:44:55,605] {'EAP_IF': 'start lot_break_srv'}
+[2019-09-11 12:44:55,607] {'EAP_IF': 'start lot_bin_srv'}
+[2019-09-11 12:44:55,607] {'EAP_IF': 'start eq_record_srv'}
+[2019-09-11 12:44:55,608] {'EAP_IF': 'start lot_record_srv'}
+[2019-09-11 12:44:55,608] {'EAP_IF': 'start qry_dcplan_item_srv'}
+[2019-09-11 12:44:55,609] {'EAP_IF': 'start qry_eq_record_srv'}
+[2019-09-11 12:44:55,609] {'EAP_IF': 'start qry_lot_record_srv'}
+[2019-09-11 12:44:55,610] {'EAP_IF': 'start qry_lot_srv'}
+[2019-09-11 12:44:55,611] {'EAP_IF': 'start qry_lot_bin_srv'}
+[2019-09-11 12:44:55,612] {'EAP_IF': 'start qry_eq_lot_srv'}
+[2019-09-11 12:44:55,614] {'MQTT': 'mq_qry_lot_record_srv', 'STATUS': 'active'}
+[2019-09-11 12:44:55,614] {'EAP_IF': 'start qry_eq_product_lot_srv'}
+[2019-09-11 12:44:55,615] {'EAP_IF': 'start S1F1_srv'}
+[2019-09-11 12:44:55,616] {'EAP_IF': 'start alarm_srv'}
+[2019-09-11 12:44:55,667] {'MQTT': 'mq_qry_lot_srv', 'STATUS': 'active'}
+[2019-09-11 12:44:55,718] {'MQTT': 'mq_qry_product_lot_srv', 'STATUS': 'active'}
+[2019-09-11 12:44:55,769] {'MQTT': 'mq_S1F1_srv', 'STATUS': 'active'}
+[2019-09-11 12:44:55,820] {'MQTT': 'mq_alarm_srv', 'STATUS': 'active'}
+[2019-09-11 22:48:57,965] {'MQTT': 'mq_log_EAP_IF_srv', 'STATUS': 'active'}
+[2019-09-11 22:48:57,965] {'EAP_IF': 'start mq_log_EAP_srv'}
+[2019-09-11 22:48:57,966] {'EAP_IF': 'start step_in_srv'}
+[2019-09-11 22:48:57,966] {'EAP_IF': 'start step_out_srv'}
+[2019-09-11 22:48:57,966] {'EAP_IF': 'start dc_srv'}
+[2019-09-11 22:48:57,967] {'EAP_IF': 'start lot_break_srv'}
+[2019-09-11 22:48:57,967] {'EAP_IF': 'start lot_bin_srv'}
+[2019-09-11 22:48:57,968] {'EAP_IF': 'start eq_record_srv'}
+[2019-09-11 22:48:57,968] {'EAP_IF': 'start lot_record_srv'}
+[2019-09-11 22:48:57,969] {'EAP_IF': 'start qry_dcplan_item_srv'}
+[2019-09-11 22:48:57,969] {'EAP_IF': 'start qry_eq_record_srv'}
+[2019-09-11 22:48:57,970] {'EAP_IF': 'start qry_lot_record_srv'}
+[2019-09-11 22:48:57,970] {'EAP_IF': 'start qry_lot_srv'}
+[2019-09-11 22:48:57,971] {'EAP_IF': 'start qry_lot_bin_srv'}
+[2019-09-11 22:48:57,971] {'EAP_IF': 'start qry_eq_lot_srv'}
+[2019-09-11 22:48:57,971] {'EAP_IF': 'start qry_eq_product_lot_srv'}
+[2019-09-11 22:48:57,972] {'EAP_IF': 'start S1F1_srv'}
+[2019-09-11 22:48:57,972] {'EAP_IF': 'start alarm_srv'}
+[2019-09-11 22:48:58,034] {'MQTT': 'mq_qry_product_lot_srv', 'STATUS': 'active'}
+[2019-09-11 23:41:20,603] {'MQTT': 'mq_log_EAP_IF_srv', 'STATUS': 'active'}
+[2019-09-11 23:41:20,603] {'EAP_IF': 'start mq_log_EAP_srv'}
+[2019-09-11 23:41:20,604] {'EAP_IF': 'start step_in_srv'}
+[2019-09-11 23:41:20,605] {'EAP_IF': 'start step_out_srv'}
+[2019-09-11 23:41:20,605] {'EAP_IF': 'start dc_srv'}
+[2019-09-11 23:41:20,606] {'EAP_IF': 'start lot_break_srv'}
+[2019-09-11 23:41:20,607] {'EAP_IF': 'start lot_bin_srv'}
+[2019-09-11 23:41:20,608] {'EAP_IF': 'start eq_record_srv'}
+[2019-09-11 23:41:20,608] {'EAP_IF': 'start lot_record_srv'}
+[2019-09-11 23:41:20,609] {'EAP_IF': 'start qry_dcplan_item_srv'}
+[2019-09-11 23:41:20,610] {'EAP_IF': 'start qry_eq_record_srv'}
+[2019-09-11 23:41:20,610] {'EAP_IF': 'start qry_lot_record_srv'}
+[2019-09-11 23:41:20,611] {'EAP_IF': 'start qry_lot_srv'}
+[2019-09-11 23:41:20,613] {'EAP_IF': 'start qry_lot_bin_srv'}
+[2019-09-11 23:41:20,614] {'MQTT': 'mq_step_in_srv', 'STATUS': 'active'}
+[2019-09-11 23:41:20,614] {'EAP_IF': 'start qry_eq_lot_srv'}
+[2019-09-11 23:41:20,616] {'EAP_IF': 'start qry_eq_product_lot_srv'}
+[2019-09-11 23:41:20,617] {'EAP_IF': 'start S1F1_srv'}
+[2019-09-11 23:41:20,618] {'EAP_IF': 'start alarm_srv'}
+[2019-09-11 23:41:20,721] {'MQTT': 'mq_qry_lot_record_srv', 'STATUS': 'active'}
+[2019-09-11 23:41:20,776] {'MQTT': 'mq_qry_lot_srv', 'STATUS': 'active'}
+[2019-09-11 23:41:20,831] {'MQTT': 'mq_qry_lot_bin_srv', 'STATUS': 'active'}
+[2019-09-11 23:41:20,886] {'MQTT': 'mq_qry_product_lot_srv', 'STATUS': 'active'}
+[2019-09-11 23:41:20,942] {'MQTT': 'mq_qry_lot_srv', 'STATUS': 'active'}

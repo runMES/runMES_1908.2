@@ -1,0 +1,3 @@
+name,description,instruction,eq_group,dcplan,,
+DEMO-Etch,,DEMO-Etch EQ record instruction,DEMO-Etch,DEMO-Etch,,
+ST-Reflow,,ST-Reflow EQ record instruction,ST-Reflow,ST-Reflow,,

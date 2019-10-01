@@ -1,0 +1,1025 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4cbf0683-0d93-4059-a490-520edf7a11ee" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/runMES3$eap_if.coverage" NAME="eap_if Coverage Results" MODIFIED="1553260444714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MQTT" />
+    <SUITE FILE_PATH="coverage/runMES3$trans.coverage" NAME="trans Coverage Results" MODIFIED="1546326745954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/runMES3" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="runMES" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="runMES" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="runMES" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="runMES: database" type="162271b6:PgImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="runMES" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="runMES: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="runMES" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="runMES: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="runMES" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="runMES: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" module-name="runMES3" is-module-sdk="true" working-directory="$PROJECT_DIR$">
+    <envs>
+      <env key="DJANGO_SETTINGS_MODULE" value="runMES.settings" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+    <option name="myUseModuleSdk" value="true" />
+    <option name="myModuleName" value="runMES3" />
+    <option name="myEnvs">
+      <map>
+        <entry key="DJANGO_SETTINGS_MODULE" value="runMES.settings" />
+      </map>
+    </option>
+    <option name="myWorkingDirectory" value="$PROJECT_DIR$" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="runMES3" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/runMES/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="1028" selection-start-line="1028" selection-end-line="1028" />
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/runMES/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="485">
+              <caret line="171" column="11" selection-start-line="171" selection-start-column="11" selection-end-line="171" selection-end-column="11" />
+              <folding>
+                <element signature="e#307#316#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Work</find>
+      <find>CFM</find>
+      <find>cfm</find>
+      <find>fuzz</find>
+      <find>Old</find>
+      <find>MailCon</find>
+      <find>dc_s</find>
+      <find>sid=transaction.savepoint()</find>
+      <find>recs=recs+1</find>
+      <find>qry_d</find>
+      <find>dcplan_set</find>
+      <find>dc</find>
+      <find>DcItemSpec</find>
+      <find>EqRecord(</find>
+      <find>eq_record(</find>
+      <find>EqRec</find>
+      <find>LotChi</find>
+      <find>LotChoice</find>
+      <find>Choice</find>
+      <find>EqRecord</find>
+      <find>LotRecord</find>
+      <find>is_finish</find>
+      <find>step_out</find>
+      <find>last_step_time</find>
+      <find>Lot(</find>
+      <find>lot_list_li</find>
+      <find>rs=redis.Redis</find>
+      <find>lot_list_qu</find>
+      <find>tx_step_out</find>
+      <find>Lot.objects.exclude(ctrl_state='T').exclude(ctrl_state='S')</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>binning</replace>
+      <replace>dcitem_txt</replace>
+      <replace>category_txt</replace>
+      <replace>datatype_txt</replace>
+      <replace>unit_txt</replace>
+      <replace>value_txt</replace>
+      <replace>str(request.user)</replace>
+      <replace>'Lot Not Exist'</replace>
+      <replace>'EQ Not Exist'</replace>
+      <replace>'EQ Not Match Lot'</replace>
+      <replace>Lot Qty Error</replace>
+      <replace>Remaining Qty Not Sufficient</replace>
+      <replace>Lot In Hold</replace>
+      <replace>EQ Not Available</replace>
+      <replace>EQ Not Match Lot Process Step</replace>
+      <replace>Succeed</replace>
+      <replace>disabled=True</replace>
+      <replace>lot_runME.to</replace>
+      <replace>log_runME.to_warning</replace>
+      <replace>log_runMES.to_debug</replace>
+      <replace>log_runMES.to_info</replace>
+      <replace>log_runMES.to_warning</replace>
+      <replace>ST</replace>
+      <replace>log_EAP.to_debug</replace>
+      <replace>log_EAP.to_info</replace>
+      <replace>log_EAP_IF.to_debug</replace>
+      <replace>log_EAP_IF.to_info</replace>
+      <replace>mylog.debug</replace>
+      <replace>mylog.info</replace>
+      <replace>Existed</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/runMES/templates/runMES/comm_change.html" />
+        <option value="$PROJECT_DIR$/runMES/templates/runMES/eq_lot_step_in_qry.html" />
+        <option value="$PROJECT_DIR$/runMES/templates/runMES/comm_ajax_content.html" />
+        <option value="$PROJECT_DIR$/runMES/templates/runMES/eq_step_in.html" />
+        <option value="$PROJECT_DIR$/runMES/ECD_ETX_190701.csv" />
+        <option value="$PROJECT_DIR$/start_log_runMES.sh" />
+        <option value="$PROJECT_DIR$/install_pip.sh" />
+        <option value="$PROJECT_DIR$/start_eap_if.sh" />
+        <option value="$PROJECT_DIR$/initial_groups.sh" />
+        <option value="$PROJECT_DIR$/runMES/auto_model.py" />
+        <option value="$PROJECT_DIR$/modeling/templates/modeling/base.html" />
+        <option value="$PROJECT_DIR$/runMES/templates/runMES/home.html" />
+        <option value="$PROJECT_DIR$/modeling/templates/modeling/modeling_base.html" />
+        <option value="$PROJECT_DIR$/runMES/templates/home.html" />
+        <option value="$PROJECT_DIR$/runMES/templates/base_bak.html" />
+        <option value="$PROJECT_DIR$/license.txt" />
+        <option value="$PROJECT_DIR$/modeling/templates/modeling/modeling_home.html" />
+        <option value="$PROJECT_DIR$/modeling/models.py" />
+        <option value="$PROJECT_DIR$/runMES/templates/modeling_base.html" />
+        <option value="$PROJECT_DIR$/modeling/templates/modeling/upload_csv.html" />
+        <option value="$PROJECT_DIR$/runMES/add_user_group.py" />
+        <option value="$PROJECT_DIR$/runMES/add_user.py" />
+        <option value="$PROJECT_DIR$/modeling/urls.py" />
+        <option value="$PROJECT_DIR$/modeling/templates/modeling_base.html" />
+        <option value="$PROJECT_DIR$/runMES/models.py" />
+        <option value="$PROJECT_DIR$/runMES/admin.py" />
+        <option value="$PROJECT_DIR$/runMES/start_mail_srv.sh" />
+        <option value="$PROJECT_DIR$/start_mail_srv.sh" />
+        <option value="$PROJECT_DIR$/mail_srv.py" />
+        <option value="$PROJECT_DIR$/locale/tz/LC_MESSAGES/django.po" />
+        <option value="$PROJECT_DIR$/locale/cn/LC_MESSAGES/django.po" />
+        <option value="$PROJECT_DIR$/modeling/views.py" />
+        <option value="$PROJECT_DIR$/uwsgi.ini" />
+        <option value="$PROJECT_DIR$/runMES/forms.py" />
+        <option value="$PROJECT_DIR$/runMES/test_qry.py" />
+        <option value="$PROJECT_DIR$/runMES/templates/base.html" />
+        <option value="$PROJECT_DIR$/runMES/urls.py" />
+        <option value="$PROJECT_DIR$/runMES/wsgi.py" />
+        <option value="$PROJECT_DIR$/runMES/run_scripts/run_CFM_job.py" />
+        <option value="$PROJECT_DIR$/runMES/run_scripts/__init__.py" />
+        <option value="$PROJECT_DIR$/runMES/scripts/run_CFM_job.py" />
+        <option value="$PROJECT_DIR$/start_CFM.sh" />
+        <option value="$PROJECT_DIR$/runMES/scripts/run_eap_if.py" />
+        <option value="$PROJECT_DIR$/runMES/scripts/run_log_runMES.py" />
+        <option value="$PROJECT_DIR$/MQTT/eap_if.py" />
+        <option value="$PROJECT_DIR$/runMES/scripts/run_mail_srv.py" />
+        <option value="$PROJECT_DIR$/runMES/trans.py" />
+        <option value="$PROJECT_DIR$/runMES/settings.py" />
+        <option value="$PROJECT_DIR$/runMES/scripts/run_lot_job.py" />
+        <option value="$PROJECT_DIR$/start_runMES.sh" />
+        <option value="$PROJECT_DIR$/runMES/views.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="883" />
+    <option name="y" value="-1057" />
+    <option name="width" value="989" />
+    <option name="height" value="1057" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="runMES" type="b2602c69:ProjectViewProjectNode" />
+              <item name="runMES" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="runMES" type="b2602c69:ProjectViewProjectNode" />
+              <item name="runMES" type="462c0819:PsiDirectoryNode" />
+              <item name="runMES" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="runMES" type="b2602c69:ProjectViewProjectNode" />
+              <item name="runMES" type="462c0819:PsiDirectoryNode" />
+              <item name="runMES" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="jsx.switch.disabled" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/modeling/csv_samples" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.stylelint" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="runMES3" is-module-sdk="true" working-directory="$PROJECT_DIR$/runMES">
+        <envs>
+          <env key="DJANGO_SETTINGS_MODULE" value="runMES.settings" />
+        </envs>
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="runMES3" />
+        <option name="myEnvs">
+          <map>
+            <entry key="DJANGO_SETTINGS_MODULE" value="runMES.settings" />
+          </map>
+        </option>
+        <option name="myWorkingDirectory" value="$PROJECT_DIR$/runMES" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/modeling/csv_samples" />
+      <recent name="$PROJECT_DIR$/modeling/templates/modeling" />
+      <recent name="$PROJECT_DIR$/runMES/templates/runMES" />
+      <recent name="$PROJECT_DIR$/modeling" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/csv_samples" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/modeling/csv_samples" />
+      <recent name="$PROJECT_DIR$/modeling" />
+      <recent name="$PROJECT_DIR$/modeling/templates" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DjangoTestsConfigurationType">
+      <module name="runMES3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.6" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <module name="runMES3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.6" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="runMES" type="Python.DjangoServer" factoryName="Django server">
+      <module name="runMES3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="runMES.settings" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../bin/python3.6" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="localhost" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4cbf0683-0d93-4059-a490-520edf7a11ee" name="Default Changelist" comment="" />
+      <created>1543290128569</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543290128569</updated>
+      <workItem from="1545404078267" duration="650000" />
+      <workItem from="1546010250958" duration="37548000" />
+      <workItem from="1546529893881" duration="161000" />
+      <workItem from="1546530080868" duration="11153000" />
+      <workItem from="1546609716146" duration="26459000" />
+      <workItem from="1546787880748" duration="674000" />
+      <workItem from="1546789025845" duration="62000" />
+      <workItem from="1546789091235" duration="108000" />
+      <workItem from="1546789202719" duration="3000" />
+      <workItem from="1546789225474" duration="386000" />
+      <workItem from="1546789686465" duration="60243000" />
+      <workItem from="1547218487591" duration="3044000" />
+      <workItem from="1547308329037" duration="2828000" />
+      <workItem from="1547391114589" duration="97436000" />
+      <workItem from="1547826085959" duration="27557000" />
+      <workItem from="1547975588335" duration="12954000" />
+      <workItem from="1548046940642" duration="20649000" />
+      <workItem from="1548575982383" duration="1713000" />
+      <workItem from="1548605285932" duration="27296000" />
+      <workItem from="1548854060449" duration="4662000" />
+      <workItem from="1548930709407" duration="2586000" />
+      <workItem from="1548978681201" duration="45000" />
+      <workItem from="1548978761491" duration="20461000" />
+      <workItem from="1549438518196" duration="1693000" />
+      <workItem from="1549470142899" duration="38049000" />
+      <workItem from="1549880267749" duration="997000" />
+      <workItem from="1549944267070" duration="7406000" />
+      <workItem from="1550253262662" duration="13000" />
+      <workItem from="1550570090345" duration="14735000" />
+      <workItem from="1550732214922" duration="1506000" />
+      <workItem from="1550742475446" duration="1818000" />
+      <workItem from="1551139886155" duration="24476000" />
+      <workItem from="1551515953997" duration="733000" />
+      <workItem from="1551579597690" duration="1000" />
+      <workItem from="1551580816621" duration="1417000" />
+      <workItem from="1551669841788" duration="7272000" />
+      <workItem from="1551713109579" duration="64614000" />
+      <workItem from="1552032702313" duration="30494000" />
+      <workItem from="1552231826810" duration="77170000" />
+      <workItem from="1552629767250" duration="37548000" />
+      <workItem from="1552795751267" duration="5955000" />
+      <workItem from="1552835377076" duration="85000" />
+      <workItem from="1552835934912" duration="53630000" />
+      <workItem from="1553078867437" duration="33170000" />
+      <workItem from="1553314249081" duration="7748000" />
+      <workItem from="1553494713224" duration="2240000" />
+      <workItem from="1553497082527" duration="1412000" />
+      <workItem from="1553498696415" duration="61316000" />
+      <workItem from="1554048831110" duration="41429000" />
+      <workItem from="1554654163153" duration="806000" />
+      <workItem from="1554655490434" duration="3094000" />
+      <workItem from="1554739055606" duration="41633000" />
+      <workItem from="1555741968504" duration="13907000" />
+      <workItem from="1555902409816" duration="40195000" />
+      <workItem from="1556279160995" duration="31169000" />
+      <workItem from="1556504762919" duration="1428000" />
+      <workItem from="1556506372238" duration="27472000" />
+      <workItem from="1556786370700" duration="4862000" />
+      <workItem from="1556879822864" duration="884000" />
+      <workItem from="1556896083075" duration="2855000" />
+      <workItem from="1556944550983" duration="19738000" />
+      <workItem from="1557130552676" duration="14848000" />
+      <workItem from="1557200418060" duration="3639000" />
+      <workItem from="1557216116904" duration="775000" />
+      <workItem from="1557217175445" duration="19619000" />
+      <workItem from="1557306053868" duration="5819000" />
+      <workItem from="1557413005517" duration="19844000" />
+      <workItem from="1557580700347" duration="6607000" />
+      <workItem from="1557679329610" duration="3534000" />
+      <workItem from="1557738358803" duration="24619000" />
+      <workItem from="1557916455696" duration="78460000" />
+      <workItem from="1558774475083" duration="15320000" />
+      <workItem from="1558965109583" duration="2011000" />
+      <workItem from="1559014517589" duration="18088000" />
+      <workItem from="1559206996426" duration="1355000" />
+      <workItem from="1559222635985" duration="16000" />
+      <workItem from="1559223511341" duration="107671000" />
+      <workItem from="1560357997901" duration="25141000" />
+      <workItem from="1560496627383" duration="54403000" />
+      <workItem from="1561044829801" duration="9551000" />
+      <workItem from="1561163276180" duration="30488000" />
+      <workItem from="1561723244703" duration="33672000" />
+      <workItem from="1561954887517" duration="108484000" />
+      <workItem from="1562333834826" duration="25004000" />
+      <workItem from="1562464916787" duration="16312000" />
+      <workItem from="1562572235441" duration="76765000" />
+      <workItem from="1562916766239" duration="3693000" />
+      <workItem from="1563030637376" duration="4021000" />
+      <workItem from="1563179793928" duration="52785000" />
+      <workItem from="1563420284117" duration="432000" />
+      <workItem from="1563431993119" duration="6619000" />
+      <workItem from="1563515734759" duration="8934000" />
+      <workItem from="1563803615332" duration="11101000" />
+      <workItem from="1564475616511" duration="2841000" />
+      <workItem from="1564761906308" duration="10087000" />
+      <workItem from="1564934100056" duration="51730000" />
+      <workItem from="1565577572362" duration="67172000" />
+      <workItem from="1565861654830" duration="11780000" />
+      <workItem from="1566233640365" duration="8197000" />
+      <workItem from="1566313445518" duration="44920000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2053478000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="883" y="-1057" width="989" height="1057" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49950543" visible="true" weight="0.12460401" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24962063" />
+      <window_info id="Favorites" order="2" sideWeight="0.50049454" side_tool="true" weight="0.09795631" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32695252" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8577729" weight="0.27148846" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.23180874" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.21362941" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.3284839" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.14013267" side_tool="true" weight="0.26875958" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.8491936" visible="true" weight="0.39585492" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.85986733" weight="0.4811321" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32924962" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32951757" />
+      <window_info anchor="right" id="Database" order="4" weight="0.16" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49950543" visible="true" weight="0.09906396" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24962063" />
+      <window_info id="Favorites" order="2" sideWeight="0.50049454" side_tool="true" weight="0.09795631" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32695252" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8577729" visible="true" weight="0.26110262" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.23200613" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.21383648" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.3284839" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.14013267" side_tool="true" weight="0.26875958" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.8491936" weight="0.31852987" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.85986733" weight="0.24961714" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32924962" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32951757" />
+      <window_info anchor="right" id="Database" order="4" weight="0.16" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/runMES/trans.py</url>
+          <line>2219</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/runMES/views.py</url>
+          <line>2183</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/runMES/trans.py</url>
+          <line>1061</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/runMES/trans.py</url>
+          <line>1077</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/runMES/trans.py</url>
+          <line>906</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/runMES/views.py</url>
+          <line>2329</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/runMES/views.py</url>
+          <line>2511</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/runMES/views.py</url>
+          <line>1741</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/runMES/views.py</url>
+          <line>1695</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/runMES/views.py</url>
+          <line>2337</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/modeling/views.py</url>
+          <line>218</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/modeling/views.py</url>
+          <line>289</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/modeling/views.py</url>
+          <line>294</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/modeling/views.py</url>
+          <line>338</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/runMES/test_qry.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="setValue">
+      <expression>
+        <expression-string>&lt;class 'tuple'&gt;: ('column &quot;from_product_ver&quot; of relation &quot;runMES_productchangehist&quot; does not exist\nLINE 1: ... INTO &quot;runMES_productchangehist&quot; (&quot;from_product&quot;, &quot;from_prod...\n                                                             ^\n',)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>e</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/license_agreement.txt" />
+    <entry file="file://$PROJECT_DIR$/modeling/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modeling/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modeling/templates/modeling/return_info.html" />
+    <entry file="file://$PROJECT_DIR$/modeling/templates/modeling/upload_csv.html" />
+    <entry file="file://$PROJECT_DIR$/runMES/templates/runMES/modeling_home.html" />
+    <entry file="file://$PROJECT_DIR$/modeling/templates/modeling/modeling_home.html" />
+    <entry file="file://$PROJECT_DIR$/runMES/auto_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="818">
+          <caret line="217" column="25" selection-start-line="217" selection-start-column="25" selection-end-line="217" selection-end-column="25" />
+          <folding>
+            <element signature="e#137#164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lib/python3.6/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modeling/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runMES/add_user_group.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modeling/templates/modeling_base.html" />
+    <entry file="file://$PROJECT_DIR$/runMES/add_user.py" />
+    <entry file="file://$PROJECT_DIR$/runMES.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="600">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csv_samples/WO_template 20180710b.csv" />
+    <entry file="file://$PROJECT_DIR$/locale/tz/LC_MESSAGES/django.po">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="495" column="30" lean-forward="true" selection-start-line="495" selection-start-column="30" selection-end-line="495" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locale/cn/LC_MESSAGES/django.po">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="476" column="17" lean-forward="true" selection-start-line="476" selection-start-column="17" selection-end-line="476" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runMES/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="861" selection-start-line="861" selection-end-line="861" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csv_samples/dc_spec 190806.csv" />
+    <entry file="file://$PROJECT_DIR$/csv_samples/process_step 190812.csv" />
+    <entry file="file://$PROJECT_DIR$/csv_samples/ST-product-LED-Chip 190812.csv" />
+    <entry file="file://$PROJECT_DIR$/csv_samples/process 190813.csv" />
+    <entry file="file://$PROJECT_DIR$/csv_samples/product 190813.csv" />
+    <entry file="file://$PROJECT_DIR$/modeling/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="339" column="4" selection-start-line="339" selection-start-column="4" selection-end-line="339" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csv_samples/ST-product-LED-Wafer 190812.csv" />
+    <entry file="file://$PROJECT_DIR$/uwsgi.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csv_samples/dc_category 190804.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lib/python3.6/site-packages/django/db/models/fields/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="965" selection-start-line="965" selection-end-line="965" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runMES/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="374" column="64" selection-start-line="374" selection-start-column="64" selection-end-line="374" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runMES/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="48" column="3" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runMES/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runMES/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding>
+            <element signature="e#223#232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runMES/scripts/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start_CFM.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runMES/test_qry.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runMES/scripts/run_log_runMES.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runMES/scripts/run_eap_if.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="15" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MQTT/eap_if.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="127" selection-end-column="8" />
+          <folding>
+            <element signature="e#1#312#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start_log_runMES.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mail_srv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4">
+          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runMES/scripts/run_mail_srv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start_mail_srv.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start_eap_if.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lib/python3.6/site-packages/redis/connection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="106" selection-start-line="106" selection-end-line="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runMES/trans.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-522">
+          <caret line="1286" column="18" selection-start-line="1286" selection-start-column="18" selection-end-line="1286" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start_runMES.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runMES/scripts/run_CFM_job.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="10" lean-forward="true" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runMES/scripts/run_lot_job.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runMES/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
+          <folding>
+            <element signature="e#630#662#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runMES/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="171" column="11" selection-start-line="171" selection-start-column="11" selection-end-line="171" selection-end-column="11" />
+          <folding>
+            <element signature="e#307#316#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runMES/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="1028" selection-start-line="1028" selection-end-line="1028" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

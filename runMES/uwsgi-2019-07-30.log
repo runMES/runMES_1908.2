@@ -1,0 +1,70 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Jul 30 16:47:13 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.46.4) on 14 May 2019 06:35:16
+os: Darwin-18.6.0 Darwin Kernel Version 18.6.0: Thu Apr 25 23:16:27 PDT 2019; root:xnu-4903.261.4~2/RELEASE_X86_64
+nodename: joshuaMBP
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/joshuachin1/Dropbox/workspace/runMES/runMES_1907rc3i/runMES
+writing pidfile to /Users/joshuachin1/Dropbox/workspace/runMES/runMES_1907rc3i/uwsgi-master.pid
+detected binary path: /Users/joshuachin1/Dropbox/workspace/runMES/runMES_1907rc3i/bin/uwsgi
+chdir() to /Users/joshuachin1/Dropbox/workspace/runMES/runMES_1907rc3i/runMES/
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 10240
+building mime-types dictionary from file /etc/apache2/mime.types...1003 entry found
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on localhost:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:62541 (port auto-assigned) fd 3
+Python version: 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 03:03:55)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+Set PythonHome to /Users/joshuachin1/Dropbox/workspace/runMES/runMES_1907rc3i/
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7f8230800000
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+[uwsgi-cron] command "{ sleep 66 && kill -HUP $(cat /Users/joshuachin1/Dropbox/workspace/runMES/runMES_1907rc3i/uwsgi-master.pid) && ls -tp /Users/joshuachin1/Dropbox/workspace/runMES/runMES_1907rc3i/runMES/uwsgi-* | grep -v '/$' | tail -n +7  | xargs -d '\n' -r rm --; } &" registered as cron task
+mapped 1117336 bytes (1091 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7f8230800000 pid: 51777 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 51777)
+spawned uWSGI worker 1 (pid: 51785, cores: 1)
+spawned uWSGI worker 2 (pid: 51786, cores: 1)
+spawned uWSGI worker 3 (pid: 51787, cores: 1)
+spawned uWSGI worker 4 (pid: 51788, cores: 1)
+spawned uWSGI worker 5 (pid: 51789, cores: 1)
+spawned uWSGI worker 6 (pid: 51790, cores: 1)
+spawned uWSGI worker 7 (pid: 51791, cores: 1)
+spawned uWSGI worker 8 (pid: 51792, cores: 1)
+spawned uWSGI worker 9 (pid: 51793, cores: 1)
+spawned uWSGI worker 10 (pid: 51794, cores: 1)
+spawned uWSGI http 1 (pid: 51795)
+subprocess 51781 exited with code 0
+[2019-07-30 16:47:18,545] 'lang'
+Traceback (most recent call last):
+  File "./runMES/views.py", line 899, in lot_list_query
+    if request.session['lang']:
+  File "/Users/joshuachin1/Dropbox/workspace/runMES/runMES_1907rc3i/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 54, in __getitem__
+    return self._session[key]
+KeyError: 'lang'
+[2019-07-30 16:47:25,516] Not Found: /static/admin/jsi18n.html/
+[2019-07-30 16:47:27,075] Not Found: /static/admin/jsi18n.html/
+[2019-07-30 16:47:41,940] Not Found: /static/admin/jsi18n.html/
+[2019-07-30 16:47:54,244] Not Found: /static/admin/jsi18n.html/
+[2019-07-30 16:49:05,410] Not Found: /static/admin/jsi18n.html/
+/Users/joshuachin1/Dropbox/workspace/runMES/runMES_1907rc3i/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField WorkOrder.target_date received a naive datetime (2019-07-30 00:00:00) while time zone support is active.
+  RuntimeWarning)
+/Users/joshuachin1/Dropbox/workspace/runMES/runMES_1907rc3i/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField WorkOrderHist.target_date received a naive datetime (2019-07-30 00:00:00) while time zone support is active.
+  RuntimeWarning)
+...The work of process 51794 is done. Seeya!
+worker 10 killed successfully (pid: 51794)
+Respawned uWSGI worker 10 (new pid: 52304)
+...The work of process 52304 is done. Seeya!
+worker 10 killed successfully (pid: 52304)
+Respawned uWSGI worker 10 (new pid: 54850)
+/Users/joshuachin1/Dropbox/workspace/runMES/runMES_1907rc3i/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField WorkOrder.target_date received a naive datetime (2019-07-31 00:00:00) while time zone support is active.
+  RuntimeWarning)
+/Users/joshuachin1/Dropbox/workspace/runMES/runMES_1907rc3i/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField WorkOrderHist.target_date received a naive datetime (2019-07-31 00:00:00) while time zone support is active.
+  RuntimeWarning)

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/minimal-table.css' %}">
+
+<h5>LOT LIST(All)</h5>
+
+  {% if lot_list %}
+  <table width="55%">
+      <tr>
+          <td><strong> LOT </strong></td>
+          <td><strong> PRODUCT </strong></td>
+          <td><strong> EQ </strong></td>
+          <td><strong> STEP </strong></td>
+          <td><strong> RECIPE </strong></td>
+          <td><strong> DC PLAN </strong></td>
+          <td><strong> IS HOLD </strong></td>
+          <td><strong> STATE </strong></td>
+          <td><strong> NEXT OPER </strong></td>
+      </tr>
+
+
+      {% for l in lot_list %}
+          <tr>
+              <td><a href='{{ l.get_absolute_url }}'> {{ l.name }} </a></td>
+              <td> {{ l.product }} </td>
+              <td> {{ l.curr_eq }} </td>
+              <td> {{ l.process_step }} </td>
+              <td> {{ l.step_recipe }} </td>
+              <td> {{ l.step_dcplan }} </td>
+              <td> {{ l.is_hold }}</td>
+              <td> {{ l.state }} </td>
+              <td> {{ l.get_next_operation_display }} </td>
+          </tr>
+      {% endfor %}
+
+  </table>
+
+  {% else %}
+    <p>There are no Lot.</p>
+  {% endif %}
+{% endblock %}

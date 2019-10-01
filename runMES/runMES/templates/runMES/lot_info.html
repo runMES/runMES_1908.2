@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+    <h3>Lot Info</h3>
+
+    <form id="lot_form" action='' method=''>
+        <label for='Lot'>Lot ID: </label>
+        <input id='lotid' type='text' name='lot_field' value=''>
+        &nbsp
+        <input type='submit' value='Query'>
+        <p>&nbsp;</p>
+
+        <p><span id='lotdetail'></span></p>
+    </form>
+
+    <script>
+        $("#lot_form").submit(function (e) {
+            e.preventDefault()
+            $.ajax({
+                method: "POST",
+                data: $(this).serialize(),
+                success: function (e) {
+                    console.log(e);
+                    $('#lotdetail').html(e);
+                }
+            });
+        });
+    </script>
+
+{% endblock %}

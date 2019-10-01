@@ -1,0 +1,7 @@
+name,description,hold_release,,,,
+LH1-OOS,,H,,,,
+LH2-Engineer-Hold,,H,,,,
+LH3-Customer-Hold,,H,,,,
+LR1-Re-Test-OK,,R,,,,
+LR2-Engineer-Release,,R,,,,
+LR3-Customer-Release,,R,,,,

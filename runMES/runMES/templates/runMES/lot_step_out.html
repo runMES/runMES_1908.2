@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+  <h3>Lot Step Out</h3>
+
+  <form id="step_out_form" action='' method=''>
+    <table id="tableid">
+      {{ form }}
+    </table>
+    <br>
+    <input type='submit' value='Step Out'>
+    <br>
+    <p>Reply: <span id='reply'></span></p>
+  </form>
+
+  <script>
+      $("#step_out_form").submit(function (e) {
+          e.preventDefault()
+          $.ajax({
+              method: "POST",
+              data: $(this).serialize(),
+              success: function (ret) {
+                  $('#reply').html(ret);
+              }
+          });
+      });
+  </script>
+
+{% endblock %}

@@ -1,0 +1,45 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Sep 16 03:24:07 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 7.0.2 (clang-700.1.81) on 15 May 2019 10:25:14
+os: Darwin-18.7.0 Darwin Kernel Version 18.7.0: Thu Jun 20 18:42:21 PDT 2019; root:xnu-4903.270.47~4/RELEASE_X86_64
+nodename: joshuaMBP
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 12
+current working directory: /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES
+detected binary path: /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/bin/uwsgi
+chdir() to /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/
+your processes number limit is 1418
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+building mime-types dictionary from file /etc/apache2/mime.types...1003 entry found
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000 fd 5
+uwsgi socket 0 bound to TCP address 127.0.0.1:55746 (port auto-assigned) fd 4
+Python version: 3.6.4 (v3.6.4:d48ecebad5, Dec 18 2017, 21:07:28)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+Set PythonHome to /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7f8c7c013a00
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+[uwsgi-cron] command "{ sleep 66 && kill -HUP $(cat /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/uwsgi-master.pid) && ls -tp /Users/jc/Dropbox/workspace/runMES/runMES_1908.2p5/runMES/uwsgi-* | grep -v '/$' | tail -n +7  | xargs -d '\n' -r rm --; } &" registered as cron task
+mapped 1117336 bytes (1091 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7f8c7c013a00 pid: 85355 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 85355)
+spawned uWSGI worker 1 (pid: 36417, cores: 1)
+spawned uWSGI worker 2 (pid: 36418, cores: 1)
+spawned uWSGI worker 3 (pid: 36419, cores: 1)
+spawned uWSGI worker 4 (pid: 36420, cores: 1)
+spawned uWSGI worker 5 (pid: 36421, cores: 1)
+spawned uWSGI worker 6 (pid: 36422, cores: 1)
+spawned uWSGI worker 7 (pid: 36423, cores: 1)
+spawned uWSGI worker 8 (pid: 36424, cores: 1)
+spawned uWSGI worker 9 (pid: 36425, cores: 1)
+spawned uWSGI worker 10 (pid: 36426, cores: 1)
+spawned uWSGI http 1 (pid: 36427)
+subprocess 36416 exited with code 0
+[2019-09-16 14:03:24,336] Not Found: /apple-touch-icon-precomposed.png
+[2019-09-16 14:03:24,443] Not Found: /apple-touch-icon.png

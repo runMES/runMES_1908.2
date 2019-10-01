@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% block title %}<title>run.MES</title>{% endblock %}
+  <meta charset="utf-8">
+
+  {% load static %}
+  <script src="{% static 'js/jquery.js' %}"></script>
+  <script src="{% static 'js/bootstrap-datetimepicker.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <script src="{% static 'js/moment-with-locales.js' %}"></script>
+  <script src="{% static 'js/locales.js' %}"></script>
+  <script src="{% static 'js/moment.js' %}"></script>
+
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap-datetimepicker.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/datetimepicker.css' %}">
+  <link rel="icon" href="{% static 'images/glyphicons-halflings.png' %}">
+  <link rel="icon" href="{% static 'images/glyphicons-halflings-white.png' %}">
+  <link rel="stylesheet" type="text/css" href="{% static "admin/css/admin-extra.css" %}">
+
+  <script type="text/javascript" src="{% static 'admin/jsi18n.html' %}/"></script>
+  <script type="text/javascript" src="{% static 'admin/js/core.js' %}"></script>
+  <script type="text/javascript" src="{% static 'admin/js/admin/RelatedObjectLookups.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'admin/js/jquery.init.js' %}"></script>
+  <script type="text/javascript" src="{% static 'admin/js/actions.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'admin/js/calendar.js' %}"></script>
+  <script type="text/javascript" src="{% static 'admin/js/admin/DateTimeShortcuts.js' %}"></script>
+
+  <link rel="stylesheet" type="text/css" href="{% static 'admin/css/forms.css' %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'admin/css/base.css' %}"/>
+{#  <link rel="stylesheet" type="text/css" href="{% static 'admin/css/global.css' %}"/>#}
+  <link rel="stylesheet" type="text/css" href="{% static 'admin/css/widgets.css' %}"/>
+
+
+
+  <style type='text/css'>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 2px;
+    }
+
+    label {
+      display: inline-block;
+      text-align: left;
+      width: 90px;
+    }
+  </style>
+</head>
+
+<body>
+<div class="container-fluid">
+  {% block content %}{% endblock %}
+
+  {% comment %}<div class="col-sm-5">
+            {% block sidebar %}
+                <ul class="sidebar-nav">
+                {% block content1 %}{% endblock %}
+                </ul>
+            {% endblock %}
+        </div>
+
+        <div class="col-sm-4 ">
+
+        </div>{% endcomment %}
+</div>
+</body>
+</html>

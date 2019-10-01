@@ -1,0 +1,277 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as request.session['lang'] %}
+{% load runMES_extras %}
+
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+  <title>runMES</title>
+  <link rel="stylesheet" type="text/css" href="{% static '/css/bootstrap.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static '/css/jquery.dataTables.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static '/css/buttons.bootstrap.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static '/css/buttons.dataTables.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static '/css/select.dataTables.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static '/images/sort_both.png' %}">
+  <link rel="stylesheet" type="text/css" href="{% static '/images/sort_asc.png' %}">
+  <link rel="icon" href="{% static 'images/glyphicons-halflings.png' %}">
+  <link rel="icon" href="{% static 'images/glyphicons-halflings-white.png' %}">
+
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap-datetimepicker.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/datetimepicker.css' %}">
+  {#    <link rel="stylesheet" href="(% static 'css/bootstrap-treeview.min.css' %}">#}
+  {#  <script type="text/javascript" language="javascript" src="{% static '/js/jquery-3.3.1.js' %}"></script>#}
+  <link rel="stylesheet" type="text/css" href="{% static 'admin/css/forms.css' %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'admin/css/base.css' %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'admin/css/widgets.css' %}"/>
+
+
+  <link rel="stylesheet" type="text/css" href="{% static 'fonts/Ubuntu-B.ttf' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'fonts/Ubuntu-BI.ttf' %}">
+
+  <script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap-datetimepicker.min.js' %}"></script>
+  <script src="{% static 'js/locales.js' %}"></script>
+  <script src="{% static 'js/moment-with-locales.js' %}"></script>
+  {#    <script src="{% static 'js/bootstrap-treeview.min.js' %}"></script>#}
+
+  <script src="{% static '/js/jquery.dataTables.min.js' %}"></script>
+  <script src="{% static '/js/dataTables.bootstrap.min.js' %}"></script>
+  <script src="{% static '/js/buttons.bootstrap.js' %}"></script>
+  <script src="{% static '/js/dataTables.buttons.js' %}"></script>
+  <script src="{% static '/js/dataTables.select.min.js' %}"></script>
+
+  <script type="text/javascript" src="{% static 'admin/jsi18n.html' %}"></script>
+  <script type="text/javascript" src="{% static 'admin/js/core.js' %}"></script>
+  <script type="text/javascript" src="{% static 'admin/js/admin/RelatedObjectLookups.js' %}"></script>
+  <script type="text/javascript" src="{% static 'admin/js/vendor/jquery/jquery.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'admin/js/jquery.init.js' %}"></script>
+  <script type="text/javascript" src="{% static 'admin/js/actions.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'admin/js/calendar.js' %}"></script>
+  <script type="text/javascript" src="{% static 'admin/js/admin/DateTimeShortcuts.js' %}"></script>
+
+  <link rel="icon" href="{% static 'images/favicon.ico' %}">
+
+  <style type='text/css'>
+
+    table, th, td {
+      width: auto;
+      table-layout: auto;
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 2px;
+    }
+
+    td {
+      class: "col-sm-1";
+    }
+
+    label {
+      display: inline-block;
+      text-align: left;
+      width: 90px;
+    }
+
+    h4 {
+      font-family: Ubuntu, Arial, Helvetica, sans-serif;
+    }
+
+    a:link {
+      color: #666666;
+    }
+
+    a:visited {
+      color: grey;
+    }
+
+    a:hover {
+      color: grey;
+    }
+
+    a:active {
+      color: #a2aec7;
+    }
+
+    .sidebar-nav {
+      background-color: Linen;
+    }
+
+    .logo {
+      color: linen;
+    }
+
+    input[type=submit] {
+      background: #666;
+    }
+
+    input[readonly] {
+      border-color: unset;
+      border-style: unset;
+      border-width: 0;
+      background-color: unset;
+      color: rgb(84, 84, 84);
+      padding: 0px 0px;
+    }
+
+    .dropdown-menu li {
+      list-style-type: none;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand text-warning" href="/home/"><span class='logo'>runMES</span></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+             aria-expanded="false">{% trans 'Lot Query' %}<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/lot/lot_info">{% trans 'Lot Info' %}</a></li>
+            <li><a href="/lot/lot_query_eq/">{% trans 'Lot Query EQ' %}</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="/lot/lot_hist/">{% trans 'Lot History' %}</a></li>
+            <li><a href="/lot/lot_dc_hist_query/">{% trans 'Lot Data Collection History' %}</a></li>
+            <li><a href="/lot/lot_run_card/">{% trans 'Lot Run Card Query' %}</a></li>
+            {% if user|has_group:'Super' %}
+              <li><a href="/lot/">{% trans 'Lot List(WIP)' %}</a></li>
+              <li><a href="/lot/finished/">{% trans 'Lot List(Finished)' %}</a></li>
+              <li><a href="/lot/shipped/">{% trans 'Lot List(Shipped)' %}</a></li>
+              <li><a href="/lot/terminated/">{% trans 'Lot List(Terminated)' %}</a></li>
+            {% endif %}
+
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+             aria-expanded="false">{% trans 'Lot Operation' %}<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            {% if user|has_group:'OP' %}
+              <li><a href="/lot/step_in/">{% trans 'Step-In' %}</a></li>
+              <li><a href="/lot/step_out/">{% trans 'Step-Out' %}</a></li>
+              <li><a href="/lot/eq_step_in_query/">{% trans 'EQ Step-In' %}</a></li>
+              <li><a href="/lot/lot_query_dc/">{% trans 'Data Collection' %}</a></li>
+              <li><a href="/lot/lot_breaking/">{% trans 'Breaking' %}</a></li>
+              <li><a href="/lot/lot_query_bin/">{% trans 'Binning' %}</a></li>
+              <li><a href="/lot/lot_record/">{% trans 'Lot Record' %}</a></li>
+              <li><a href="/lot/lot_ship/">{% trans 'Lot Ship' %}</a></li>
+            {% endif %}
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+             aria-expanded="false">{% trans 'Lot Manager' %}<span class="caret"></span></a>
+          {% if user|has_group:'Super' %}
+            <ul class="dropdown-menu">
+              <li><a href="/lot/lot_split/">{% trans 'Lot Split' %}</a></li>
+              <li><a href="/lot/lot_merge/">{% trans 'Lot Merge' %}</a></li>
+              <li><a href="/lot/lot_split_merge_hist/">{% trans 'Lot SplitMerge Hist' %}</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="/lot/lot_bonus/">{% trans 'Lot Bonus' %}</a></li>
+              <li><a href="/lot/lot_scrap/">{% trans 'Lot Scrap' %}</a></li>
+              <li><a href="/lot/lot_bonus_scrap_hist/">{% trans 'Lot BonusScrap Hist' %}</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="/lot/lot_hold">{% trans 'Lot Hold' %}</a></li>
+              <li><a href="/lot/lot_release">{% trans 'Lot Release' %}</a></li>
+              <li><a href="/lot/lot_hold_release_hist">{% trans 'Lot HoldRelease Hist' %}</a></li>
+              <li><a href="/lot/ctrl_state">{% trans 'Lot State' %}</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="/lot/change_product/">{% trans 'Change Product' %}</a></li>
+              <li><a href="/lot/priority_change/">{% trans 'Change Priority' %}</a></li>
+            </ul>
+          {% endif %}
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+             aria-expanded="false">{% trans 'EQ Manager' %}<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            {% if user|has_group:'OP' %}
+              <li><a href="/eq/">{% trans 'EQ List' %}</a></li>
+              <li><a href="/eq/eq_query_lot">{% trans 'EQ Query Lot' %}</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="/eq/eq_record">{% trans 'EQ Record' %}</a></li>
+              <li><a href="/eq/eq_record/eq_record_history/">{% trans 'EQ Record History (last 200 records)' %}</a></li>
+            {% endif %}
+            {% if user|has_group:'Super' %}
+              <li role="separator" class="divider"></li>
+              <li><a href="/eq/eq_hold"> {% trans 'EQ Hold' %}</a></li>
+              <li><a href="/eq/eq_release">{% trans 'EQ Release' %}</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="/eq/state/">{% trans 'EQ State Change' %}</a></li>
+            {% endif %}
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+             aria-expanded="false">{% trans 'Fab Manager' %}<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            {% if user|has_group:'Manager' %}
+              <li><a href="/work_order/">{% trans 'Work Order' %}</a></li>
+              <li><a href="/work_order_query">{% trans 'Work Order Query' %}</a></li>
+              <li><a href="/work_order/work_order_import">{% trans 'Work Order Import' %}</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="/lot_start/">{% trans 'Lot Start' %}</a></li>
+              <li><a href="/lot_start_batch_query/">{% trans 'Batch Lot Start' %}</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="/CFM/"> {% trans 'Fab Monitoring' %}</a></li>
+            {% endif %}
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+             aria-expanded="false">{% trans 'Account' %}<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/accounts/logout/">{% trans 'Logout' %}</a></li>
+            <li><a href="/change_password/">{% trans 'Change Password' %}</a></li>
+          </ul>
+        </li>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">{{ user.username }}&nbsp|&nbsp{{ user|group_list }}</a></li>
+          <li>
+            <div style="display:inline">
+              <a href="/lang/ZH/">繁|</a>
+              <a href="/lang/CN/">简|</a>
+              <a href="/lang/EN/">EN</a>
+            </div>
+          </li>
+        </ul>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="col-sm-10 ">
+  {% block content %}{% endblock %}
+</div>
+
+
+</body>
+</html>

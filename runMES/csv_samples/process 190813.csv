@@ -1,0 +1,5 @@
+name,description,process_step,,,,
+DEMO-PCB,,DEMO-Kitting,,,,
+DEMO-PCB,,DEMO-Etch,,,,
+DEMO-PCB,,DEMO-Reflow,,,,
+DEMO-PCB,,DEMO-AOI,,,,

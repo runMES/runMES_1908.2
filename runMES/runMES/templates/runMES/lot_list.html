@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+{#    <link rel="stylesheet" type="text/css" href="{% static 'css/minimal-table.css' %}">#}
+
+    <h5>LOT LIST(All)</h5>
+
+    <table id="dt_list" class="table table-striped table-bordered compact" style="width:100%; margin:0">
+        <tr>
+            <td><strong> LOT </strong></td>
+            <td><strong> PRODUCT </strong></td>
+            <td><strong> EQ </strong></td>
+            <td><strong> STEP </strong></td>
+            <td><strong> RECIPE </strong></td>
+            <td><strong> DC PLAN </strong></td>
+            <td><strong> IS HOLD </strong></td>
+            <td><strong> IS FINISH </strong></td>
+            <td><strong> CTRL STATE </strong></td>
+            <td><strong> NEXT OPER </strong></td>
+        </tr>
+
+
+        {% for l in lot_list %}
+            <tr>
+                <td><a href='{{ l.get_absolute_url }}'> {{ l.name }} </a></td>
+                <td> {{ l.product }} </td>
+                <td> {{ l.curr_eq }} </td>
+                <td> {{ l.process_step }} </td>
+                <td> {{ l.step_recipe }} </td>
+                <td> {{ l.step_dcplan }} </td>
+                <td> {{ l.is_hold }}</td>
+                <td> {{ l.is_finish }}</td>
+                <td> {{ l.ctrl_state }} </td>
+                <td> {{ l.get_next_operation_display }} </td>
+            </tr>
+        {% endfor %}
+
+    </table>
+
+{% endblock %}

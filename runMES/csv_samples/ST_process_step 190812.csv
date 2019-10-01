@@ -1,0 +1,6 @@
+name,description,recipe,instruction,eq_group,category,step_check,dcplan,breaking,binning
+ST-Kitting,,ST-Kitting,,ST-Kitting,ST-Kitting,,ST-Kitting,,
+ST-AOI,,ST-AOI,,ST-AOI,ST-AOI,,ST-AOI,,
+ST-Reflow,,ST-Reflow,,ST-Reflow,ST-Reflow,,ST-Reflow,,
+ST-Plating,,ST-Plating,,ST-Plating,ST-Plating,,,,
+ST-Break,,ST-Break,,ST-Break,ST-Break,,,ST-Break,

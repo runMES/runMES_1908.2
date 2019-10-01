@@ -1,0 +1,9 @@
+name,description,data_type,unit
+DEMO-AOI-Line,,F,MIL
+DEMO-Reflow-Temp,,F,Degree C
+DEMO-Etch-S.G.,,F,S.G.
+DEMO-Etch-Temp,,F,Degree C
+DEMO-Air-Pressure,,I,PSI
+DEMO-PN,,T,PN
+DEMO-SN,,T,SN
+DEMO-PH,,F,PH

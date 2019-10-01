@@ -1,0 +1,86 @@
+#header {
+  width: auto;
+  height: 40px;
+  padding: 10px 40px;
+  /*background: #417690;*/
+  background: #292F33;
+  line-height: 40px;
+  color: #fff;
+  overflow: hidden;
+}
+
+#branding h1 {
+    color: #fff;
+}
+
+#branding h2 {
+    color: #fff;
+}
+
+.module caption {
+	background: #292F33;
+}
+
+
+tbody {
+	color: #292F33;
+}
+
+h1 {
+	color: #292F33;
+}
+
+
+h3 {
+	color: #292F33;
+}
+
+h5 {
+	color: #292F33;
+}
+
+code, pre {
+   color: #292F33;
+}
+
+#content-related h3 {
+	color: #292F33;
+}
+
+div.breadcrumbs {
+    background: #666;
+}
+
+.button.default, input[type=submit].default, .submit-row input.default {
+    background: #292F33;
+}
+
+.button, input[type=submit], input[type=button], .submit-row input, a.button {
+    background: #666;
+
+}
+
+.module h2, .module caption, .inline-group h2 {
+    background: #666;
+    color: #fff;
+}
+
+a:link, a:visited {
+    color: #292F33;
+    text-decoration: none;
+}
+
+#changelist #toolbar {
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    background: #666;
+    color: #666;
+}
+
+div#changelist-filter h2 {
+    background: #666;
+}
+
+
